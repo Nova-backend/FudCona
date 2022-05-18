@@ -1,0 +1,130 @@
+*{
+    font-family: 'Quicksand';
+}
+
+
+.logo {
+    display: flex;
+    text-align: center;
+    margin-left: 6em;
+    margin-top: 15em;
+}
+
+.logo > h1 {
+    color: #989A38;
+}
+
+.welcome > h1 {
+    color: gray;
+}
+
+.container {
+    margin-left: 10em;
+    margin-right: auto;
+    height: 70vh;
+    width: 70vw;
+}
+
+
+.top-svg{
+    position: absolute;
+    width: 244.61px;
+    height: 443.44px;
+    left: -3.53px;
+    top: -298.01px;
+
+}
+
+.below-svg {
+    position: absolute;
+    width: 327px;
+    height: 535px;
+    left: -88.63px;
+    /* top: 1091.5px; */
+}
+
+.right-svg {
+    position: absolute;
+    width: -327px;
+    height: 535px;
+    /* left: 1223.37px; */
+    top: -274.49px;
+}
+
+.bottom-svg {
+    position: absolute;
+    width: 244.61px;
+    height: 443.44px;
+    /* left: 1419.64px; */
+    /* top: 591px; */
+}
+
+.input { 
+    width: 600px;
+    height: 500px;
+    margin-left: 22em;
+    margin-top: -15em;
+    box-shadow: 10px 10px 100px #F2F1F1;
+    padding-top: 2em;
+}
+
+.inputs {
+   margin-left: auto;
+   margin-right: auto;
+   height: 20vh;
+   width: 20vw;
+   margin-bottom: 3em;
+   margin-top: 3em;
+}
+
+.pass-input {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.email-input {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+
+}
+
+input {
+    width: 250px;
+    height: 38px;
+    padding: 5px 10px 5px 10px;
+    margin: 5px 10px 15px 0px;
+    border: none;
+    background-color: #F2F1F1;
+}
+
+.sbmt-btn {
+    width: 150px;
+    height: 38px;
+    font-size: 14px;
+    color: white;
+    background-color: #989A38;
+    border: none;
+    text-align: center;
+    margin-right: 4.5em;
+}
+
+.signup > h4 {
+    color: #989A38;
+}
+
+.signup {
+    display: flex;
+    margin-left: auto;
+    gap: 5px;
+    margin-right: auto;
+    height: 20vh;
+    width: 20vw;
+    margin-top: 1EM;
+}
+
+.desc {
+    line-height: 5em;
+}
+
