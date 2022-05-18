@@ -27,7 +27,7 @@ function RestoInfo() {
                 <p>2</p>
                 <div className='right'>
                   <h2 className='title2'>Restaurant type & Timings</h2>
-                  <h2 className='details2' id="details">Establishmenr & cusire type opening hours</h2>
+                  <h2 className='details2' id="details">Establishment & cusire type opening hours</h2>
                 </div>
               </div>
               <div className='three' id="oneDiv">
