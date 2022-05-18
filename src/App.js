@@ -9,6 +9,7 @@ function App() {
 {/* <SignupPage/> */}
 <Profile />
 {/* <Profile2 /> */}
+
     </div>
   );
 }
