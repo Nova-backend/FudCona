@@ -560,6 +560,7 @@ function Profile2() {
               placeholder="upload image"
             ></input>
     
+    
           </div>
           <button className="h-12 w-32 bg-yellow ml-56 mt-4 text-white font-bold">ADD MORE</button><span><i class="fa-solid fa-plus text-2xl ml-4 text-yellow"></i></span>
         </div>

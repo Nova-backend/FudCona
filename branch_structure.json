@@ -1,0 +1,33 @@
+{
+  "default_branch": "main",
+  "branches": [
+    "Alice",
+    "Anaise",
+    "Divine",
+    "elua",
+    "gilbert",
+    "main",
+    "origin",
+    "sonia"
+  ],
+  "parent": {
+    "Alice": "main",
+    "Anaise": "main",
+    "Divine": "main",
+    "elua": "main",
+    "gilbert": "main",
+    "main": null,
+    "origin": "main",
+    "sonia": "main"
+  },
+  "order": [
+    "main",
+    "Alice",
+    "Anaise",
+    "Divine",
+    "elua",
+    "gilbert",
+    "origin",
+    "sonia"
+  ]
+}
