@@ -1,11 +1,11 @@
 import React from "react";
 import "./Welcome.css";
 import rbg from "../images/rbg.jpg";
-import {  MdOutlineAccountCircle } from "react-icons/md";
-import {AiOutlineProfile } from "react-icons/ai";
-import {HiClipboardCopy} from "react-icons/hi";
-import {HiOutlineSearch} from "react-icons/hi";
-import {AiOutlineBars} from "react-icons/ai";
+import { MdOutlineAccountCircle } from "react-icons/md";
+import { AiOutlineProfile } from "react-icons/ai";
+import { HiClipboardCopy } from "react-icons/hi";
+import { HiOutlineSearch } from "react-icons/hi";
+import { AiOutlineBars } from "react-icons/ai";
 
 function Welcome() {
   return (
@@ -13,15 +13,24 @@ function Welcome() {
       <div className="header">
         <div className="desc">
           <nav className="navbar">
-            <span className="black">Fud</span>
-            <span className="olive">Cona</span>
-            <HiOutlineSearch />
-            <AiOutlineBars />
+            <div className="">
+              <span className="black">Fud</span>
+              <span className="olive">Cona</span>
+            </div>
+            <div className="header-icons">
+              <HiOutlineSearch className="icons" />
+              <AiOutlineBars className="icons" />
+            </div>
           </nav>
           <p>
-            Register your restaurant on FudCona for free and get more revenue
+            Register your restaurant on FudCona for free <br /> and get more
+            revenue
           </p>
-          <button type="submit" className="reg-btn">Register now</button>
+          {/* <button type="submit" class Name="reg-btn">Register now</button> */}
+          <button type="submit" className="button">
+            {" "}
+            Register now
+          </button>
         </div>
 
         <div className="svg">
@@ -30,7 +39,7 @@ function Welcome() {
             height="350"
             viewBox="0 0 1295 350"
             fill="none"
-            xmlns="http://www.w3.org/2000/svg"
+            xmlns="http://wwww3.org/2000/svg"
           >
             <g filter="url(#filter0_d_171_9)">
               <path
@@ -42,7 +51,7 @@ function Welcome() {
             </g>
             <defs>
               <filter
-                id="filter0_d_171_9"  
+                id="filter0_d_171_9"
                 x="0"
                 y="0"
                 width="1295"
@@ -74,7 +83,6 @@ function Welcome() {
                   in="SourceGraphic"
                   in2="effect1_dropShadow_171_9"
                   result="shape"
-
                 />
               </filter>
             </defs>
@@ -83,32 +91,46 @@ function Welcome() {
       </div>
 
       <div className="how">
-      <svg className="how-dec" width="1440" height="6" viewBox="0 0 1440 6" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path fill-rule="evenodd" clip-rule="evenodd" d="M0 2.49994H266.38C266.614 1.26618 267.698 0.333272 269 0.333272C270.473 0.333272 271.667 1.52718 271.667 2.99994C271.667 4.4727 270.473 5.66661 269 5.66661C267.698 5.66661 266.614 4.7337 266.38 3.49994H0V2.49994ZM1168.33 2.99994C1168.33 4.4727 1169.53 5.66661 1171 5.66661C1172.3 5.66661 1173.39 4.7337 1173.62 3.49994H1440V2.49994H1173.62C1173.39 1.26618 1172.3 0.333272 1171 0.333272C1169.53 0.333272 1168.33 1.52718 1168.33 2.99994Z" fill="#989A38"/>
-</svg>
+        <svg
+          className="how-dec"
+          width="1440"
+          height="6"
+          viewBox="0 0 1440 6"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M0 2.49994H266.38C266.614 1.26618 267.698 0.333272 269 0.333272C270.473 0.333272 271.667 1.52718 271.667 2.99994C271.667 4.4727 270.473 5.66661 269 5.66661C267.698 5.66661 266.614 4.7337 266.38 3.49994H0V2.49994ZM1168.33 2.99994C1168.33 4.4727 1169.53 5.66661 1171 5.66661C1172.3 5.66661 1173.39 4.7337 1173.62 3.49994H1440V2.49994H1173.62C1173.39 1.26618 1172.3 0.333272 1171 0.333272C1169.53 0.333272 1168.33 1.52718 1168.33 2.99994Z"
+            fill="#989A38"
+          />
+        </svg>
 
         <h3>How it works</h3>
       </div>
       <div className="container">
-
-
         <div className="column">
           <div className="steps">
-            <MdOutlineAccountCircle className="step-icons" />
-            <h1>Step 1</h1>
-            <p>Register your restaurant</p>
+            <div>
+              <MdOutlineAccountCircle className="step-icons" />
+              <h1>Step 1</h1>
+              <p>Register your restaurant</p>
+            </div>
           </div>
           <div className="steps">
-            <AiOutlineProfile className="step-icons" />
-            <h1>Step 2</h1>
-            <p>
-              Create your restaurant profile and create menu items
-            </p>
+            <div>
+              <AiOutlineProfile className="step-icons" />
+              <h1>Step 2</h1>
+              <p>Create your restaurant profile and create menu items</p>
+            </div>
           </div>
           <div className="steps">
-            <HiClipboardCopy className="step-icons" />
-            <h1>Step 3</h1>
-            <p>Start receiving orders</p>
+            <div>
+              <HiClipboardCopy className="step-icons" />
+              <h1>Step 3</h1>
+              <p>Start receiving orders</p>
+            </div>
           </div>
         </div>
         <div className="bg-img">

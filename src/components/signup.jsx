@@ -1,4 +1,4 @@
-import axios from "axios";
+// import axios from "axios";
 import { useState } from "react";
 function Signup() {
   const [data, setData] = useState({
@@ -30,7 +30,7 @@ function Signup() {
     ).then((response) => {
       return response.json();
     }).then((data)=>{
-      setResponse(data.apierror.message
+      setResponse(data.apierror.message)
         //working
       // console.log(response.json());
       console.log(data.apierror.message)

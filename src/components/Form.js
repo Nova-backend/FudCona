@@ -3,7 +3,7 @@ import './Form.css'
 
 function Form () {
     return(
-        <div>
+        <div className>
             <form action="">
                 <div className="container">
                 <svg className="top-svg" width="357" height="284" viewBox="0 0 357 284" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -18,11 +18,12 @@ function Form () {
 <svg className="bottom-svg" width="353" height="287" viewBox="0 0 353 287" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M321.243 321.946C227.731 401.002 84.2661 385.06 0.805113 286.338C13.8998 206.813 145.623 303.88 239.135 224.824C332.647 145.767 264.449 5.21256 339.442 0.0493526C422.903 98.7714 414.755 242.889 321.243 321.946Z" fill="#EFEFE3"/>
 </svg>
-
+                    <div className="all">
+                    
 
                     <div className="logo">
-                        <h1>Fud</h1>
-                        <h1>Cona</h1>
+                        <span className="black">Fud</span>
+                        <span className="olive">Cona</span>
                     </div>
                     <div className="input">
                         <div className="welcome">
@@ -37,6 +38,7 @@ function Form () {
                         <div className="pass-input">
                             <label htmlFor="Password">PASSWORD</label>
                             <input type="password" name="password" placeholder="Password" />
+                            <a href="#">Forgot password?</a>
                         </div>
                         </div>
                   
@@ -45,8 +47,10 @@ function Form () {
                         </div>
                         <div className="signup">
                             <p>Don't have an account?</p>
-                            <h4>SIGN UP</h4>
+                            <a href="#">SIGN UP</a>
                         </div>
+                    </div>
+                        
                     </div>
                 </div>
             </form>
