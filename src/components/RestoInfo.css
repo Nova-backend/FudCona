@@ -44,7 +44,7 @@
     margin: 0rem 2rem 0rem 2rem;
 }
 #details{
-    color:black;
+    color:rgb(62, 62, 62);
     font-weight: 400;
     font-size: 1.4rem;
 }
@@ -66,4 +66,12 @@
     /* position: absolute; */
     float: right; 
     margin: 5rem 5rem 5rem 5rem;
+}
+.RestoInfo-logo{
+    text-decoration: none;
+    color: black;
+}
+.RestoInfo-logo span{
+    color: #989A38
+    
 }

@@ -9,7 +9,7 @@ function RestoInfo() {
         <div className="RestoInfoContainer">
           <nav className="Navbar">
             <Link to="/" className="RestoInfo-logo">
-              FudCona
+              <span>FudCona</span>
             </Link>
           </nav>
           <div className="left-black"></div>
