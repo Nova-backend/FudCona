@@ -42,7 +42,7 @@ function Welcome() {
             </g>
             <defs>
               <filter
-                id="filter0_d_171_9"
+                id="filter0_d_171_9"  
                 x="0"
                 y="0"
                 width="1295"
