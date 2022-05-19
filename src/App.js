@@ -1,18 +1,16 @@
-import React from 'react';
-import Navbar from './components/RestoInfo';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.css';
+import Profile from './components/restoProfile';
+import Profile2 from './components/restoProfile2';
+import SignupPage from './components/signupPage';
 
 function App() {
   return (
-    <>
-      <Router>
-        <Navbar />
-        <Routes>
-          <Route path='/' exact />
-        </Routes>
-      </Router>
-    </>
+    <div className='h-screen'>
+{/* <SignupPage/> */}
+<Profile />
+{/* <Profile2 /> */}
+
+    </div>
   );
 }
 
