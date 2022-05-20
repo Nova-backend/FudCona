@@ -16,10 +16,10 @@ function App() {
       <Router>
         <Routes>
           <Route path='/' exact element={<Welcome/>}/>
-          <Route path='/signup' exact element={<SignupPage/>}/>
+          {/* <Route path='/signup' exact element={<SignupPage/>}/>
           <Route path='/signin' exact element={<Form/>}/>
           <Route path='/overview' exact element={ <Overview/>}/>
-          <Route path='/body' exact element={ <Body/>}/>
+          <Route path='/body' exact element={ <Body/>}/> */}
           
         </Routes>
       </Router>
