@@ -17,8 +17,10 @@ function Sidebar() {
             <i className='text-white text-2xl mt-80 absolute ml-12 flex'><FaChartPie /><span className='text-lg font-normal pl-4'>Menu</span></i>
                 <h1 className='text-3xl text-white pl-6 pt-7 font-bold font-quickSand'>Fud<span className='text-3xl text-[#989A38]'>Cona</span></h1>
                 
-               <div className='h-64 w-[16.3vw] bg-[#989A38] absolute bottom-0 ml-2'>
+               <div className='h-64 w-[16.3vw] bg-[#989A38] absolute bottom-0 ml-2'> 
+                 <Link to='./Account'>
                <i className='text-white text-2xl mt-16 absolute ml-12 flex'><FaUser /><span className='text-lg font-normal pl-4'>Account</span></i>
+               </Link>
                 <i className='text-white text-2xl mt-36 absolute ml-12 flex'><FaListUl /><span className='text-lg font-normal pl-4'>Overview</span></i> 
                </div>
         </div>
