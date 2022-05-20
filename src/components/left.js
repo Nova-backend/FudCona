@@ -45,4 +45,4 @@ function Left() {
   )
 }
 
-export default Left
+export default Left;

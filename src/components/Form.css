@@ -19,9 +19,9 @@
 }
 
 .container {
-    margin-left: 10em;
     margin-right: auto;
-    height: 70vh;
+    height: 100vh;
+    width: 100%;
     width: 70vw;
 }
 
@@ -29,7 +29,7 @@
 .top-svg{
     position: absolute;
     width: 244.61px;
-    height: 443.44px;
+    height: 400.44px;
     left: -15.53px;
     top: -115.01px;
 
@@ -40,23 +40,23 @@
     width: 307px;
     height: 535px;
     left: 1.63px;
-    top: 223.5px;    
+    top: 183.5px;    
 }
 
 .right-svg {
     position: absolute;
     width: -327px;
     height: 535px;
-    left: 1249.97px;    
+    left: 1110.97px;    
     top:  -34.49px;
 }
 
 .bottom-svg {
     position: absolute;
     width: 244.61px;
-    height: 443.44px;
-    left: 1269.9px;
-    top: 390px;
+    height: 306.44px;
+    left: 1146.9px;
+    top: 412px;
 }
 
 .input { 
