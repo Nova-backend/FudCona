@@ -4,22 +4,27 @@ import { FaBell, FaSearch, FaPlusCircle,FaArrowAltCircleRight} from 'react-icons
 import image from '../Images/image.jpg'
 function Overview() {
   return (
-    <div className='flex'>
+      <div className=' h-screen w-full'>
         <Sidebar />
         
-        <div className='h-[100vh] w-[82.6vw] bg-white absolute right-0 ml-auto mr-auto'>
-        <div className='flex  mt-10 content-center' style={{justifyContent:"center"}}>
-            <div className='h-10 w-10 bg-[#989A38] rounded-full '></div>
-            <div className='h-10 w-10 bg-[#989A38] rounded-full ml-6'></div>
-            <div className='h-10 w-10 bg-[#989A38] rounded-full ml-6'></div>
-             <i className='text-gray-300 text-4xl absolute right-[13em] pt-2'><FaBell /></i>
-             <i className='text-gray-300 text-4xl absolute right-[11em] pt-2'><FaSearch /></i>
-             <div className='h-16 w-[2px] bg-[#989A38]  absolute right-[23em]'></div>
-             <p className='absolute right-56 pt-4 text-lg'>Ingabire Divine</p>
-              <img src={image} alt="" className='absolute h-20 w-20 rounded-full right-24' />
+        <div className='flex  mt-10 content-center ' style={{justifyContent:"center"}}>
+            <div className='flex pl-8 '>
+            <div className='flex gap-4 w-full'>
+            <div className='h-5 w-5 bg-[#989A38] rounded-full '></div>
+            <div className='h-5 w-5 bg-[#989A38] rounded-full '></div>
+            <div className='h-5 w-5 bg-[#989A38] rounded-full '></div>
+            </div>
+            <div className='flex absolute right-24 mx-12 gap-4'>
+             <i className='text-gray-300  mt-4'><FaBell /></i>
+             <i className='text-gray-300  mt-4'><FaSearch /></i>
+             <div className='h-16 w-[2px] bg-[#989A38] ml-4'></div>
+             <p className=' pt-4 text-sm mx-4'>Ingabire Divine</p>
+            </div>
+              <img src={image} alt="" className='absolute h-12 w-12 rounded-full right-8' />
+            </div>
             </div>
             
-            <div className='h-[183vh] w-[73vw] bg-[#FAFAF5] border-[1px] border-solid border-[#989A38] absolute right-24 top-36 flex' id='shadow'>
+            <div className=' w-[73vw] border-[1px] border-solid border-[#989A38] absolute right-24 top-36 flex' id='shadow'>
                 <div className='block'>
                 <div className='flex'>
                 <div className='text-xl pl-8 pt-4 '>
@@ -36,9 +41,9 @@ function Overview() {
                </div>
                </div>
                
-               <div className='bg-white h-32 w-[38vw] rounded-2xl ml-24 pt-4 pl-5 mt-2 flex'>
-                <img src={image} alt="" className='h-24 w-24 rounded-lg ' />
-                <div className='pl-8 pt-3'>
+               <div className='bg-white h-32 rounded-2xl ml-24 pt-4 pl-5 mt-2 flex'>
+                <img src={image} alt="" className='h-12 w-12 rounded-lg ' />
+                <div className='pl-8 pt-'>
                 <p>Kafir lime Vodka,Lemongrass,Ginger</p>
                 <p>Tom Yummy-12.5</p>
                 <p className='text-[#989A38]'>Frw,5000</p>
@@ -46,81 +51,81 @@ function Overview() {
              
                </div>
               
-               <div className='bg-white h-32 w-[38vw] rounded-2xl ml-24 pt-4 pl-5 mt-6 flex'>
-                <img src={image} alt="" className='h-24 w-24 rounded-lg ' />
-                <div className='pl-8 pt-3'>
+               <div className='bg-white h-32 w-[38vw] rounded-2xl ml-24  pl-5 mt- flex'>
+                <img src={image} alt="" className='h-12 w-12 rounded-lg ' />
+                <div className='pl-8 pt-'>
                 <p>Kafir lime Vodka,Lemongrass,Ginger</p>
                 <p>Tom Yummy-12.5</p>
                 <p className='text-[#989A38]'>Frw,5000</p>
                 </div>
              
                </div>
-               <div className='bg-white h-32 w-[38vw] rounded-2xl ml-24 pt-4 pl-5 mt-6 flex'>
-                <img src={image} alt="" className='h-24 w-24 rounded-lg ' />
-                <div className='pl-8 pt-3'>
+               <div className='bg-white h-32 w-[38vw] rounded-2xl ml-24  pl-5 mt- flex'>
+                <img src={image} alt="" className='h-12 w-12 rounded-lg ' />
+                <div className='pl-8 pt-'>
                 <p>Kafir lime Vodka,Lemongrass,Ginger</p>
                 <p>Tom Yummy-12.5</p>
                 <p className='text-[#989A38]'>Frw,5000</p>
                 </div>
              
                </div>
-               <div className='bg-white h-32 w-[38vw] rounded-2xl ml-24 pt-4 pl-5 mt-6 flex'>
-                <img src={image} alt="" className='h-24 w-24 rounded-lg ' />
-                <div className='pl-8 pt-3'>
+               <div className='bg-white h-32 w-[38vw] rounded-2xl ml-24  pl-5 mt- flex'>
+                <img src={image} alt="" className='h-12 w-12 rounded-lg ' />
+                <div className='pl-8 pt-'>
                 <p>Kafir lime Vodka,Lemongrass,Ginger</p>
                 <p>Tom Yummy-12.5</p>
                 <p className='text-[#989A38]'>Frw,5000</p>
                 </div>
              
                </div>
-               <div className='bg-white h-32 w-[38vw] rounded-2xl ml-24 pt-4 pl-5 mt-6 flex'>
-                <img src={image} alt="" className='h-24 w-24 rounded-lg ' />
-                <div className='pl-8 pt-3'>
+               <div className='bg-white h-32 w-[38vw] rounded-2xl ml-24  pl-5 mt- flex'>
+                <img src={image} alt="" className='h-12 w-12 rounded-lg ' />
+                <div className='pl-8 pt-'>
                 <p>Kafir lime Vodka,Lemongrass,Ginger</p>
                 <p>Tom Yummy-12.5</p>
                 <p className='text-[#989A38]'>Frw,5000</p>
                 </div>
              
                </div>
-               <div className='bg-white h-32 w-[38vw] rounded-2xl ml-24 pt-4 pl-5 mt-6 flex'>
-                <img src={image} alt="" className='h-24 w-24 rounded-lg ' />
-                <div className='pl-8 pt-3'>
+               <div className='bg-white h-32 w-[38vw] rounded-2xl ml-24  pl-5 mt- flex'>
+                <img src={image} alt="" className='h-12 w-12 rounded-lg ' />
+                <div className='pl-8 pt-'>
                 <p>Kafir lime Vodka,Lemongrass,Ginger</p>
                 <p>Tom Yummy-12.5</p>
                 <p className='text-[#989A38]'>Frw,5000</p>
                 </div>
              
                </div>
-               <div className='bg-white h-32 w-[38vw] rounded-2xl ml-24 pt-4 pl-5 mt-6 flex'>
-                <img src={image} alt="" className='h-24 w-24 rounded-lg ' />
-                <div className='pl-8 pt-3'>
+               <div className='bg-white h-32 w-[38vw] rounded-2xl ml-24  pl-5 mt- flex'>
+                <img src={image} alt="" className='h-12 w-12 rounded-lg ' />
+                <div className='pl-8 pt-'>
                 <p>Kafir lime Vodka,Lemongrass,Ginger</p>
                 <p>Tom Yummy-12.5</p>
                 <p className='text-[#989A38]'>Frw,5000</p>
                 </div>
              
                </div>
-               <div className='bg-white h-32 w-[38vw] rounded-2xl ml-24 pt-4 pl-5 mt-6 flex'>
-                <img src={image} alt="" className='h-24 w-24 rounded-lg ' />
-                <div className='pl-8 pt-3'>
+               <div className='bg-white h-32 w-[38vw] rounded-2xl ml-24  pl-5 mt- flex'>
+                <img src={image} alt="" className='h-12 w-12 rounded-lg ' />
+                <div className='pl-8 pt-'>
                 <p>Kafir lime Vodka,Lemongrass,Ginger</p>
                 <p>Tom Yummy-12.5</p>
                 <p className='text-[#989A38]'>Frw,5000</p>
                 </div>
              
                </div>
-               <div className='bg-white h-32 w-[38vw] rounded-2xl ml-24 pt-4 pl-5 mt-6 flex'>
-                <img src={image} alt="" className='h-24 w-24 rounded-lg ' />
-                <div className='pl-8 pt-3'>
+               <div className='bg-white h-32 w-[38vw] rounded-2xl ml-24  pl-5 mt- flex'>
+                <img src={image} alt="" className='h-12 w-12 rounded-lg ' />
+                <div className='pl-8 pt-'>
                 <p>Kafir lime Vodka,Lemongrass,Ginger</p>
                 <p>Tom Yummy-12.5</p>
                 <p className='text-[#989A38]'>Frw,5000</p>
                 </div>
              
                </div>
-               <div className='bg-white h-32 w-[38vw] rounded-2xl ml-24 pt-4 pl-5 mt-6 flex'>
-                <img src={image} alt="" className='h-24 w-24 rounded-lg ' />
-                <div className='pl-8 pt-3'>
+               <div className='bg-white h-32 w-[38vw] rounded-2xl ml-24  pl-5 mt- flex'>
+                <img src={image} alt="" className='h-12 w-12 rounded-lg ' />
+                <div className='pl-8 pt-'>
                 <p>Kafir lime Vodka,Lemongrass,Ginger</p>
                 <p>Tom Yummy-12.5</p>
                 <p className='text-[#989A38]'>Frw,5000</p>
@@ -132,31 +137,33 @@ function Overview() {
                <i className='text-4xl text-[#989A38] pt-8 pl-8'><FaArrowAltCircleRight /></i>
                </div>
               </div>
+              <div className='absolute right-24 mx-96 text-sm'>
               <div className='block'>
-              <div className='mt-60 fixed' >
-               <h1 className='flex text-[#989A38] text-3xl pl-52'>Add Item</h1>
+              <div className='fixed' >
+               <h1 className='flex text-[#989A38] text-xl ml-44'>Add Item</h1>
                <div className='flex'>
-               <h1 className='text-xl pt-10 pl-40'>Create new Item</h1>
-               <i className='pt-8 pl-24 text-4xl text-gray-300'><FaPlusCircle /></i>
+               <h1 className=' mt-10 ml-40 text-lg'>Create new Item</h1>
+               <i className='pt-8 pl-24 text-gray-300'><FaPlusCircle /></i>
                </div>
                <div>
                    <div>
-                    <div className='h-20 w-72 ml-40 bg-gray-200 border-[1px] mt-6 border-[#989A38] flex text-xl text-center pt-4'>
-                        <input type="radio" className='h-10 w-10 ml-4 mx-6' />Dessert
+                    <div className='h-12 w-64 ml-40 bg-gray-200 border-[1px] mt-6 border-[#989A38] flex text-center pt-4'>
+                        <input type="radio" className='h-1/3 w-10 ml-4 mx-6' />Dessert
                     </div>
-                    <div className='h-20 w-72 ml-40 bg-gray-200 border-[1px]  border-[#989A38] flex text-xl text-center pt-4'>
-                        <input type="radio" className='h-10 w-10  ml-4 pt-4 pl-6 mx-6 m'/>Main
+                    <div className='h-12 w-64 ml-40 bg-gray-200 border-[1px]  border-[#989A38] flex  text-center pt-4'>
+                        <input type="radio" className='h-1/3 w-10  ml-4 pt-4 pl-6 mx-6 m'/>Main
                     </div>
-                    <div className='h-20 w-72 ml-40 bg-gray-200 border-[1px]  border-[#989A38] flex text-xl text-center pt-4'>
-                        <input type="radio" className='h-10 w-10 ml-4  pt-4 mx-6' />Drink
+                    <div className='h-12 w-64 ml-40 bg-gray-200 border-[1px]  border-[#989A38] flex text-center pt-4'>
+                        <input type="radio" className='h-1/3 w-10 ml-4  pt-4 mx-6' />Drink
                     </div>
-                    <div className='h-20 w-72 ml-40 bg-gray-200 border-[1px] border-[#989A38] flex text-xl text-center  pt-4'>
-                        <input type="radio" className='h-10 w-10 ml-4  pt-4 mx-6'/>Appetizer
+                    <div className='h-12 w-64 ml-40 bg-gray-200 border-[1px] border-[#989A38] flex text-center  pt-4'>
+                        <input type="radio" className='h-1/3 w-10 ml-4  pt-4 mx-6'/>Appetizer
                     </div>
-                    <div className='h-20 w-72 ml-40 bg-gray-200 border-[1px]  border-[#989A38] flex text-xl text-center  pt-4'>
-                        <input type="radio" className='h-10 w-10 ml-4  pt-4 mx-6'/>Starter
+                    <div className='h-12 w-64 ml-40 bg-gray-200 border-[1px]  border-[#989A38] flex text-center  pt-4'>
+                        <input type="radio" className='h-1/3 w-10 ml-4  pt-4 mx-6'/>Starter
                     </div>
                    </div>
+               </div>
                </div>
                </div>
                </div>
@@ -165,12 +172,12 @@ function Overview() {
                </div>
                <div className='mt-[115em]'>
                <div className='flex content-center' style={{justifyContent:"center"}}>
-               <div className='h-10 w-10 bg-[#989A38] rounded-full '></div>
-              <div className='h-10 w-10 bg-[#989A38] rounded-full ml-6'></div>
-               <div className='h-10 w-10 bg-[#989A38] rounded-full ml-6'></div>
+               <div className='h-6 w-6 bg-[#989A38] rounded-full '></div>
+              <div className='h-6 w-6 bg-[#989A38] rounded-full ml-6'></div>
+               <div className='h-6   w-6 bg-[#989A38] rounded-full ml-6'></div>
                </div>
                </div>
-               </div>
+
              
         </div>
    
