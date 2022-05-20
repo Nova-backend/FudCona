@@ -80,7 +80,9 @@ function Body() {
             <li className="p-[10px] font-light">Months</li>
           </ul>
           <div className="w-[900px] ml-[4rem]">
+
             <Graph />
+            
           </div>
           <div className="float-right mt-[-32rem]">
             <div className="h-[100px] w-[250px] border-solid border-2 border-[#989A38]   pl-[90px] ">

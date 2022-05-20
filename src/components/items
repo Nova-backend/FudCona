@@ -4,8 +4,8 @@ const items =[
 head:Restaurant,
 sales:sales,
 saleName:salelina,
-name:Soy
-
+name:Soy,
+img:""
 
 
 

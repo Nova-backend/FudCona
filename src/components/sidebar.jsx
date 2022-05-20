@@ -3,7 +3,7 @@ import React from 'react'
 function Sidebar() {
   return (
     <div>
-        <div className="bg-black w-[15%] h-[75vh] p-[20px] pl-6">
+        <div className="bg-black fixed w-[15%] h-[75vh] p-[20px] pl-6">
         <h1 className='text-[30px] p-[10px] mt-[-10px]'><span className='text-white'>Fud</span><span className='text-[#989A38] text-[40px]'>Cona</span></h1>
             <nav>
                 <div className="flex p-[10px] text-[15px]">
