@@ -1,0 +1,22 @@
+const items =[
+{
+    id:1,
+head:Restaurant,
+sales:sales,
+saleName:salelina,
+name:Soy
+
+
+
+
+},
+{
+    id:2,
+    head:Restaurant,
+    sales:sales,
+    saleName:salelina,
+    name:Soy  
+}
+
+]
+export default items

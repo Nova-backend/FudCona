@@ -8,7 +8,6 @@ import Client from './client'
 function CombinationPages() {
   return (
       <div className='flex'>
-   
     {/* <BasicPage /> */}
     {/* <OrderContent /> */}
     <Router>
@@ -18,7 +17,6 @@ function CombinationPages() {
       <Route path='/Account' element={<Client />}></Route>
     </Routes>
     </Router>
-   
     </div>
   )
 }

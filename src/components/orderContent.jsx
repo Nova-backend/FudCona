@@ -114,4 +114,4 @@ const services = [
   )
 }
 
-export default OrderContent
+export default OrderContent;

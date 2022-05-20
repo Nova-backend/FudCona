@@ -1,0 +1,159 @@
+*{
+    font-family: 'Quicksand';
+}
+
+
+.logo {
+    display: flex;
+    text-align: center;
+    margin-left: 6em;
+    margin-top: 15em;
+}
+
+.logo > h1 {
+    color: #989A38;
+}
+
+.welcome > h1 {
+    color: gray;
+}
+
+.container {
+    margin-right: auto;
+    height: 100vh;
+    width: 100%;
+    width: 70vw;
+}
+
+
+.top-svg{
+    position: absolute;
+    width: 244.61px;
+    height: 400.44px;
+    left: -15.53px;
+    top: -115.01px;
+
+}
+
+.below-svg {
+    position: absolute;
+    width: 307px;
+    height: 535px;
+    left: 1.63px;
+    top: 183.5px;    
+}
+
+.right-svg {
+    position: absolute;
+    width: -327px;
+    height: 535px;
+    left: 1110.97px;    
+    top:  -34.49px;
+}
+
+.bottom-svg {
+    position: absolute;
+    width: 244.61px;
+    height: 306.44px;
+    left: 1146.9px;
+    top: 412px;
+}
+
+.input { 
+    width: 600px;
+    height: 500px;
+    margin-left: 22em;
+    margin-top: -15em;
+    box-shadow: 10px 10px 100px #F2F1F1;
+    padding-top: 2em;
+}
+
+.inputs {
+   margin-left: auto;
+   margin-right: auto;
+   height: 20vh;
+   width: 20vw;
+   margin-bottom: 3em;
+   margin-top: 3em;
+}
+
+.pass-input {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.pass-input > a {
+    color: #989A38;
+    font-size: 14px;
+    text-align: end;
+    margin-right: 3em;
+    text-decoration: none;
+}
+
+.email-input {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+
+}
+
+input {
+    width: 250px;
+    height: 38px;
+    padding: 5px 10px 5px 10px;
+    margin: 5px 10px 15px 0px;
+    border: none;
+    background-color: #F2F1F1;
+}
+
+.sbmt-btn {
+    width: 150px;
+    height: 38px;
+    font-size: 14px;
+    color: white;
+    background-color: #989A38;
+    border: none;
+    text-align: center;
+    margin-right: 4.5em;
+    margin-top: 1em;
+}
+
+.signup > a {
+    color: #989A38;
+    text-decoration: none;
+
+}
+
+.signup {
+    display: flex;
+    margin-left: auto;
+    gap: 5px;
+    margin-right: auto;
+    height: 20vh;
+    width: 20vw;
+    margin-top: 1em;
+}
+
+.all {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-left: 15em;
+    overflow: hidden;
+    
+}
+
+
+.black {
+    color: black; 
+    font-size: x-large;
+    font-weight: bold;
+  
+}
+
+.olive {
+    color: #989A38;
+    font-size: x-large;
+    font-weight: bold;
+}
