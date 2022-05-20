@@ -1,10 +1,47 @@
-import React from "react";
-import './Form.css'
+import React, { useState} from "react";
+import './Form.css';
+import {Link, useNavigate} from 'react-router-dom';
+
 
 function Form () {
+    const [data, setData] = useState({
+        login : '',
+        password: ''
+    })
+    const Navigate = useNavigate();
+    const getData = ({ currentTarget: input }) => {
+        setData({ ...data, [input.name]: input.value });
+      };
+      const token = localStorage.getItem("token");
+    const [response, setResponse] = useState("")
+    const handleSubmit = async(e)=>{
+        e.preventDefault();
+               await fetch(
+            "http://196.223.240.154:8099/supapp/api/auth/signin",
+            {
+              headers: { "Content-Type": "application/json" },
+              method: "POST",
+              body: JSON.stringify(data),
+              authorization: "Bearer " + token
+            }
+          ).then((response) => {
+            return response.json();
+          }).then((data)=>{
+             if(data.token.accessToken){
+                localStorage.setItem("token", data.token.accessToken);
+                setResponse("Login successfull");
+                Navigate("/overview");
+            }else{
+                setResponse("Invalid credentials");
+                Navigate("/signin");
+            }
+          });
+     
+        };
+    
     return(
         <div className>
-            <form action="">
+            <form action="" onSubmit={handleSubmit}>
                 <div className="container">
                 <svg className="top-svg" width="357" height="284" viewBox="0 0 357 284" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M39.8786 -35.774C139.775 -106.591 281.365 -78.5057 356.127 26.9566C336.317 105.079 213.326 -2.83818 113.43 67.979C13.5332 138.796 69.5306 284.642 -5.62989 283.408C-80.3927 177.946 -60.0179 35.0432 39.8786 -35.774Z" fill="#EFEFE3"/>
@@ -33,11 +70,11 @@ function Form () {
                         <div className="inputs">
                         <div className="email-input">
                             <label htmlFor="Email">EMAIL</label>
-                            <input type="email" name="email" placeholder = "Email" />
+                            <input type="email" name="login" placeholder = "Email" value={data.email} onChange={getData} required/>
                         </div>
                         <div className="pass-input">
                             <label htmlFor="Password">PASSWORD</label>
-                            <input type="password" name="password" placeholder="Password" />
+                            <input type="password" name="password" placeholder="Password" value={data.password} onChange={getData} required/>
                             <a href="#">Forgot password?</a>
                         </div>
                         </div>
@@ -47,8 +84,11 @@ function Form () {
                         </div>
                         <div className="signup">
                             <p>Don't have an account?</p>
+                           <Link to="/signup">
                             <a href="#">SIGN UP</a>
+                           </Link>
                         </div>
+                        <p className="text-blue-500">{response}</p>
                     </div>
                         
                     </div>
