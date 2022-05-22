@@ -25,7 +25,8 @@ function App() {
           <Route path='/body' exact element={ <Body/>}/>
           <Route path='/orders' exact element={ <OrderContent />}/>
           <Route path='/clients' exact element={<Client/>}/>
-          <Route path='/account' exact element={<Profile/>}/>
+          <Route path='/account' exact element={<Profile />}/>
+          <Route path='/profile1' exact element={<Profile2 />}/>
         
         </Routes>
       </Router>
