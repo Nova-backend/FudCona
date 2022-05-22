@@ -55,9 +55,11 @@ function Profile2() {
               </div>
             </div>
             <div class="flex gap-4">
+              <Link to='/restoinfo'>
               <div className="rounded-full w-12 h-12 bg-darkGray flex justify-center items-center text-3xl text-white font-bold">
                 3
               </div>
+              </Link>
               <div>
                 <h6 className="font-bold">Restaurant information</h6>
                 <p className="w-64">

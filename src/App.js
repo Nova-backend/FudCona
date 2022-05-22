@@ -13,6 +13,7 @@ import Order from './components/order';
 import OrderContent from './components/orderContent';
 import Clients from './components/clients';
 import Client from './components/clients';
+import RestoInfo from './components/RestoInfo'
 function App() {
   return (
       <div className='h-screen w-full'>
@@ -27,7 +28,7 @@ function App() {
           <Route path='/clients' exact element={<Client/>}/>
           <Route path='/account' exact element={<Profile />}/>
           <Route path='/profile1' exact element={<Profile2 />}/>
-        
+          <Route path='/restoinfo' exact element={<RestoInfo />}/>
         </Routes>
       </Router>
       </div>
