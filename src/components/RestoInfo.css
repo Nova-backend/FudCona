@@ -5,51 +5,37 @@
 }
 .restoInfo{
     height: auto;
-<<<<<<< HEAD
-}
-.Navbar{
-    height: 7rem;
-    width: 98.95%;
-    border-bottom: #989A38 solid 0.1rem;
-    float: right;
-}
-=======
     padding-bottom: 5rem;
 }
 .Navbar{
-    height: 7rem;
-    width: 100%;
+    height: 3.5rem;
     border-bottom: #989A38 solid 0.1rem;
     float: right;
+    width:100%;
 }
 .search img{
     width: 2rem;
-    height: 2rem;
+    height: 1rem;
     margin: 3rem 0rem 0rem 62rem;
 }
 .bell img{
-    width: 3rem;
     height: 3rem;
     color:  #CCCCCC;
-    margin: -2.7rem 0rem 1rem 66rem;
 }
 .line{
-    margin: -4.3rem 0rem 0rem 72rem;
     height: 3rem;
     width: 0.1rem;
     background-color:#989A38;
 }
 .userName h1{
-    font-size: 2rem;
-    font-family: sans-serif;
-    margin: -2.9rem 0rem 0rem 75rem;
+    font-size: 1rem;
+    margin-left: 10px;
+    margin-top:10px;
 }
 .person{
-    margin: -4.65rem 0rem 0rem 86rem;
     font-size: 2rem;
     font-family: sans-serif;
 }
->>>>>>> origin/anaise
 .left-black{
     background-color: black;
     height: 100vh;
@@ -62,15 +48,9 @@
     border-radius: 0.7rem;
     height: 32rem;
     width: 30rem;
-<<<<<<< HEAD
-    position: absolute;
-    float: left;
-    margin: 12rem 5rem 5rem 5rem;
-=======
     float: left;
     margin: 5rem 5rem 5rem 5rem;
     background-color: #FFFBFB;
->>>>>>> origin/anaise
 }
 .createProfile h1{
     text-align: center;
@@ -88,11 +68,7 @@
     margin: 0rem 2rem 0rem 2rem;
 }
 #details{
-<<<<<<< HEAD
-    color:black;
-=======
     color:rgb(62, 62, 62);
->>>>>>> origin/anaise
     font-weight: 400;
     font-size: 1.4rem;
 }
@@ -107,26 +83,16 @@
     background-color: #989A38;
 }
 .restoInformation{
-<<<<<<< HEAD
-    border: #989A38 solid 0.1rem;
-    border-radius: 0.7rem;
-    height: 30rem;
-    width: 43rem;
-    /* position: absolute; */
-    float: right; 
-    margin: 5rem 5rem 5rem 5rem;
-}
-=======
     position: absolute;
     float: left;
-    border-radius: 0.7rem;
-    width: 626px;
-    height: 44.5rem;
-    margin: 12rem 5rem 10rem 50rem;
+    width: 500px;   
+    height: 35rem;
+    margin: 1rem 5rem 10rem 45rem;
     background-color: #FFFDFD;
-    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25);
+    box-shadow: 1px 1px 1px 1px #989A38;
     padding: 1rem 2rem 2rem 2rem;
     display: flex;
+    border: 1px solid #989A38;
 }
 .form{
     position: absolute;
@@ -143,20 +109,21 @@
     padding-bottom: 1rem;
 }
 #first, #second, #fifth, .tsikeni{
-    width: 28rem;
-    height: 3.5rem;
+    width: 20rem;
+    height: 3rem;
     background: #FFFDFD;
     border: 1px solid #989A38;
     border-radius: 10px;
-    margin: 0rem 3rem 2rem 3rem;
+    margin: 0rem 3rem 1rem 3rem;
 }
 .form input[placeholder]{
     padding: 1rem 1rem 1rem 1.3rem;
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
-.form #first{
-    margin: 2rem 3rem 2rem 3rem;
+input:focus{
+    outline:none;
 }
+
 .form .text{
     padding-bottom: 1rem;
 }
@@ -164,9 +131,9 @@
 .RestoInfo-logo{
     text-decoration: none;
     color: black;
-    font-size: 3rem;
+    font-size: 1rem;
     position: absolute;
-    padding: 2rem 0rem 0rem 2.5rem ;
+    padding: 1rem 0rem 0rem 2.5rem ;
 }
 .RestoInfo-logo span{
     color: #989A38;
@@ -174,7 +141,7 @@
 }
 .restoInformation h1{
     text-align: center;
-    margin: 2rem 7rem;
+    margin: 1rem 7rem;
     
 }
 
@@ -190,7 +157,7 @@
 }
 
 .tsikeni p{
-    font-size:1.8em;
+    font-size:1em;
     padding-top:0.4em;
     color:black;
     margin: 0rem 1rem 1rem 1rem;
@@ -202,19 +169,21 @@
 }
 .yvette input{
     margin: 0.1rem 5rem 0rem 2.4rem;
-    height: 3.3rem;
-    width: 22.5rem;
-    padding: 0rem 0rem 0rem 1rem;
+    height: 2.5rem;
+    width: 14rem;
+    padding: 2rem 0rem 0rem 1rem;
     position: absolute;
     background: #FFFDFD;
     border: #FFFDFD;
     border-radius: 10px;
+}
+.yvette input:focus{
+    outline:none;
 }
 .line2{
     width: 0.1rem;
     background-color: rgb(110, 110, 110);
     margin: -4.1rem 0rem 5rem 5.2rem;
     position: absolute;
-    height: 3rem;
+    height: 2rem;
 }
->>>>>>> origin/anaise
