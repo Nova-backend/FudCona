@@ -1,4 +1,4 @@
-import React from 'react'
+// import React from 'react'
 import Sidebar from './sidebar'
 import { FaBell, FaSearch, FaPlusCircle,FaArrowAltCircleRight} from 'react-icons/fa'
 import image from '../Images/image.jpg'
@@ -7,7 +7,7 @@ function Overview() {
       <div className=' h-screen w-full'>
         <Sidebar />
         
-        <div className='flex  mt-10 content-center ' style={{justifyContent:"center"}}>
+        <div className='flex  mt-12 content-center ' style={{justifyContent:"center"}}>
             <div className='flex pl-8 '>
             <div className='flex gap-4 w-full'>
             <div className='h-5 w-5 bg-[#989A38] rounded-full '></div>
@@ -24,8 +24,8 @@ function Overview() {
             </div>
             </div>
             
-            <div className=' w-[73vw] border-[1px] border-solid border-[#989A38] absolute right-24 top-36 flex' id='shadow'>
-                <div className='block'>
+            <div className=' w-[73vw] border-[1px] border-solid border-[#989A38] absolute right-24 top-36 flex ' id='shadow'>
+                <div className='block '>
                 <div className='flex'>
                 <div className='text-xl pl-8 pt-4 '>
                 <p>M</p>
@@ -40,7 +40,7 @@ function Overview() {
                 <button  className='h-14 w-40 bg-white border-[1px] border-[#989A38] text-[#989A38] rounded-lg ml-2'>Appetizer</button>
                </div>
                </div>
-               
+               <div className='overflow-y-scroll h-[60vh] scroll-m-2 scrollbar-thin scrollbar-thumb-custom scrollbar-track-custom-light  '>
                <div className='bg-white h-32 rounded-2xl ml-24 pt-4 pl-5 mt-2 flex'>
                 <img src={image} alt="" className='h-12 w-12 rounded-lg ' />
                 <div className='pl-8 pt-'>
@@ -130,20 +130,20 @@ function Overview() {
                 <p>Tom Yummy-12.5</p>
                 <p className='text-[#989A38]'>Frw,5000</p>
                 </div>
-                
+                </div>
                </div>
-               <div className='flex ml-[25em]'>
+               <div className='flex ml-[25em] mb-8'>
                <h1 className='text-4xl text-[#989A38] text-center pt-6'>More</h1>
                <i className='text-4xl text-[#989A38] pt-8 pl-8'><FaArrowAltCircleRight /></i>
                </div>
               </div>
-              <div className='absolute right-24 mx-96 text-sm'>
+              <div className='absolute right-32  text-sm'>
               <div className='block'>
-              <div className='fixed' >
+              <div className='mt-60' >
                <h1 className='flex text-[#989A38] text-xl ml-44'>Add Item</h1>
                <div className='flex'>
                <h1 className=' mt-10 ml-40 text-lg'>Create new Item</h1>
-               <i className='pt-8 pl-24 text-gray-300'><FaPlusCircle /></i>
+               <i className='pt-12 pl-24 text-gray-300'><FaPlusCircle /></i>
                </div>
                <div>
                    <div>
@@ -170,7 +170,7 @@ function Overview() {
               
           
                </div>
-               <div className='mt-[115em]'>
+               <div className='mt-[58em] mb-4'>
                <div className='flex content-center' style={{justifyContent:"center"}}>
                <div className='h-6 w-6 bg-[#989A38] rounded-full '></div>
               <div className='h-6 w-6 bg-[#989A38] rounded-full ml-6'></div>

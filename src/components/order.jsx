@@ -1,4 +1,4 @@
-import React from 'react'
+// import React from 'react'
 import Sidebar from './sidebar'
 import { FaBell, FaSearch, FaPlusCircle } from 'react-icons/fa'
 import image from '../Images/image.jpg'
@@ -10,7 +10,8 @@ function Order(props) {
     const { orders, services } = props;
 
     return (
-        <div className='flex bg-[#FAFAF5] w-full h-auto Order overflow-x-hidden'>
+        <div>
+        <div className='flex bg-[#FAFAF5] w-full h-auto Order overflow-x-hidden '>
             <Sidebar/>
             <h1 className='text-xl pt-12 pl-8 bolder'>Orders</h1>
             <div className='flex  mt-10 content-center' style={{ justifyContent: "center" }}>
@@ -21,7 +22,8 @@ function Order(props) {
                 <p className='absolute right-56 pt-4 text-lg font-quickSand font-bold'>Ingabire Divine</p>
                 <img src={image} alt="" className='absolute h-20 w-20 rounded-full right-24' />
             </div>
-            <div className='h-[180vh] w-[78vw] bg-white rounded-2xl absolute right-12 '>
+            </div>
+            <div className='h-[90vh] w-[78vw] bg-white rounded-2xl absolute right-12'>
                 <div className='flex'>
                     <div className='block pt-6 pl-8'>
                         
@@ -40,7 +42,7 @@ function Order(props) {
 
 
                 <div className='flex'>
-                <div className='block overflow-y-scroll overflow-x-hidden h-[90vh] w-5/6'>
+                <div className='block  overflow-x-hidden h-[70vh] w-5/6 overflow-y-scroll  scroll-m-2 scrollbar-thin scrollbar-thumb-custom scrollbar-track-custom-light '>
                     {orders.map(order => (
                         <div className='h-32 w-full bg-[#FAFAF5]  shadow-md shadow-slate-300 rounded-3xl flex mt-8 ml-8'>
 
@@ -120,9 +122,9 @@ function Order(props) {
                </div>
                 </div>
                 
-
+                </div>
             </div>
-        </div>
+        
 
     )
 }

@@ -4,7 +4,7 @@ import React,{useState} from 'react'
 function Client() {
     
   return (
-    <div className='h-[108vh] w-[100vw] bg-white' id='formClient'>
+    <div className='h-[100vh] w-[100vw] bg-white' id='formClient'>
         <div className='h-[80vh] w-[32vw] bg-[#FAFAF5] ml-auto mr-auto mt-24 rounded-xl' id='shadow'>
         <h1 className='text-[#989A38] text-3xl text-center pt-6 text-bolder'>Client</h1>
         <form action="" >
