@@ -1,6 +1,6 @@
 import React from "react";
 import "./Welcome.css";
-import rbg from "../Images/rbg.jpg";
+import rbg from "../images/rbg.jpg";
 import { Link } from "react-router-dom";
 import { MdOutlineAccountCircle } from "react-icons/md";
 import { AiOutlineProfile } from "react-icons/ai";

@@ -1,4 +1,4 @@
-import React from 'react';
+// import React from 'react';
 import Form from "./components/Form";
 import Welcome from "./components/Welcome"
 import Profile from './components/restoProfile';
@@ -26,7 +26,6 @@ function App() {
           <Route path='/orders' exact element={ <OrderContent />}/>
           <Route path='/clients' exact element={<Client/>}/>
           <Route path='/account' exact element={<Profile/>}/>
-        
         </Routes>
       </Router>
       </div>

@@ -5,7 +5,11 @@ module.exports = {
       colors :{
         'yellow' :"#989A38",
         'gray':'#F2F1F1',
-        'darkGray':'#D6D5D5'
+        'darkGray':'#D6D5D5',
+        custom:{
+          DEFAULT: '#989A38',
+          light: '#FAFAF5'
+        }
       },
       fontFamily:{
         'quickSand':['Quicksand', 'serif'],
@@ -16,5 +20,7 @@ module.exports = {
       }
     },
   },
-  plugins: [],
+  plugins: [
+    require('tailwind-scrollbar')
+  ],
 }

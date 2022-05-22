@@ -1,4 +1,4 @@
-import React from 'react'
+// import React from 'react'
 import {FaSearch,FaBell,FaPlus,FaEye} from 'react-icons/fa'
 function Feed() {
   return (
