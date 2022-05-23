@@ -1,5 +1,6 @@
 // import React from 'react'
-import Order from './order'
+import Order from './order';
+
 
 function OrderContent() {
   const orders = [{

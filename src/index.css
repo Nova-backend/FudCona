@@ -8,12 +8,13 @@
 
 #formClient label{
    display: block;
-   padding-top: 1em;
    padding-left: 2em;
+   font-size: 12px;
 
 }
 #formCLient input{
    background-color: #5c5c2b;
    width: 20vw;
+   font-size: 12px;
 
 }

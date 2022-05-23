@@ -6,13 +6,10 @@ import Profile2 from './components/restoProfile2';
 import SignupPage from './components/signupPage';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 import Body from './components/body';
-import Sidebar from './components/sidebar';
 import './App.css';
 import Overview from './components/overview';
-import Order from './components/order';
 import OrderContent from './components/orderContent';
-import Clients from './components/clients';
-import Client from './components/clients';
+import Client from './components/client';
 import RestoInfo from './components/RestoInfo'
 function App() {
   return (
@@ -22,13 +19,13 @@ function App() {
           <Route path='/' exact element={<Welcome/>}/>
           <Route path='/signup' exact element={<SignupPage/>}/>
           <Route path='/signin' exact element={<Form/>}/>
-          <Route path='/menu' exact element={ <Overview/>}/>
-          <Route path='/body' exact element={ <Body/>}/>
-          <Route path='/orders' exact element={ <OrderContent />}/>
-          <Route path='/clients' exact element={<Client/>}/>
+          <Route path='/clients' exact element={<Client />}/>
           <Route path='/account' exact element={<Profile />}/>
           <Route path='/profile1' exact element={<Profile2 />}/>
           <Route path='/restoinfo' exact element={<RestoInfo />}/>
+          <Route path='/orders' exact element={ <OrderContent />}/>
+          <Route path='/menu' exact element={ <Overview/>}/>
+          
         </Routes>
       </Router>
       </div>

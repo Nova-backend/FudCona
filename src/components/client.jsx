@@ -5,18 +5,18 @@ function Client() {
     
   return (
     <div className='h-[100vh] w-[100vw] bg-white' id='formClient'>
-        <div className='h-[80vh] w-[32vw] bg-[#FAFAF5] ml-auto mr-auto mt-24 rounded-xl' id='shadow'>
+        <div className='h-full w-[32vw] bg-[#FAFAF5] ml-auto mr-auto mt-2 rounded-xl' id='shadow'>
         <h1 className='text-[#989A38] text-3xl text-center pt-6 text-bolder'>Client</h1>
         <form action="" >
-            <label htmlFor="">Client</label><input type="text"  placeholder='Client Name'  className='border-b-2 border-b-[#AEAEAE] bg-[#FAFAF5] mt-2 ml-8 w-[28vw] '/>
-            <label htmlFor="">Category</label><input type="text" placeholder='Choose category' className='border-b-2 border-b-[#AEAEAE] bg-[#FAFAF5] ml-8 w-[28vw] mt-2'/>
-            <label htmlFor="">Representative</label><input type="text" placeholder='Representative' className='border-b-2 border-b-[#AEAEAE] bg-[#FAFAF5] ml-8 w-[28vw] mt-2'/>
-            <label htmlFor="">Date of creation</label><input type="text" placeholder='Month & year'  className='border-b-2 border-b-[#AEAEAE] bg-[#FAFAF5] ml-8 w-[28vw] mt-2'/>
-            <label htmlFor="">Address</label><input type="text" placeholder='Province,district,sector,cell' className='border-b-2 border-b-[#AEAEAE] bg-[#FAFAF5] ml-8 w-[28vw] mt-2'/>
-            <label htmlFor="">Email</label><input type="text" placeholder='Email' className='border-b-2 border-b-[#AEAEAE] bg-[#FAFAF5] ml-8 w-[28vw] mt-2'/>
-            <label htmlFor="">Phone</label><input type="text" placeholder='Phone' className='border-b-2 border-b-[#AEAEAE] bg-[#FAFAF5] ml-8 w-[28vw] mt-2'/>
-            <label htmlFor="">Bank Account(IBAN)</label><input type="text"  placeholder='Code' className='border-b-2 border-b-[#AEAEAE] bg-[#FAFAF5] ml-8 w-[28vw] mt-2 '/>
-            <button type='submit' className='h-14 w-40 bg-[#989A38] text-white ml-56 mt-6 hover:bg-white  border-2 border-[#989A38] hover:text-[#989A38]'>Add Client</button>
+            <label htmlFor="">Client</label><input type="text"  placeholder='Client Name'  className='border-b-2 border-b-[#AEAEAE] bg-[#FAFAF5] ml-8 w-[28vw] text-sm '/>
+            <label htmlFor="">Category</label><input type="text" placeholder='Choose category' className='border-b-2 border-b-[#AEAEAE] bg-[#FAFAF5] ml-8 w-[28vw] text-sm'/>
+            <label htmlFor="">Representative</label><input type="text" placeholder='Representative' className='border-b-2 border-b-[#AEAEAE] bg-[#FAFAF5] ml-8 w-[28vw] text-sm'/>
+            <label htmlFor="">Date of creation</label><input type="text" placeholder='Month & year'  className='border-b-2 border-b-[#AEAEAE] bg-[#FAFAF5] ml-8 w-[28vw] text-sm'/>
+            <label htmlFor="">Address</label><input type="text" placeholder='Province,district,sector,cell' className='border-b-2 border-b-[#AEAEAE] bg-[#FAFAF5] ml-8 w-[28vw] text-sm'/>
+            <label htmlFor="">Email</label><input type="text" placeholder='Email' className='border-b-2 border-b-[#AEAEAE] bg-[#FAFAF5] ml-8 w-[28vw] text-sm'/>
+            <label htmlFor="">Phone</label><input type="text" placeholder='Phone' className='border-b-2 border-b-[#AEAEAE] bg-[#FAFAF5] ml-8 w-[28vw] text-sm'/>
+            <label htmlFor="">Bank Account(IBAN)</label><input type="text"  placeholder='Code' className='border-b-2 border-b-[#AEAEAE] bg-[#FAFAF5] ml-8 w-[28vw] text-sm'/>
+            <button type='submit' className='h-8 w-40 bg-[#989A38] text-white ml-32 hover:bg-white  border-2 border-[#989A38] hover:text-[#989A38] rounded-sm'>Add Client</button>
          </form>
 
 </div>
