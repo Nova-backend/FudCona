@@ -22,10 +22,12 @@ function Sidebar() {
             <span className="font-normal ml-4">Overview</span>
           </i>
         </Link>
+        <Link to='/feed'>
         <i className="text-white flex gap-8 hover:bg-slate-800 h-12 items-center pl-2">
           <FaTable />
-          <span className="font-normal">Tables</span>
+          <span className="font-normal">Clients</span>
         </i>
+        </Link>
         {/* <Link to='./orderContent'> */}
         <Link to="/orders">
           <i className="text-white flex gap-8 hover:bg-slate-800 h-12 items-center pl-2">
