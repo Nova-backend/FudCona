@@ -1,5 +1,6 @@
-import axios from "axios";
+// import axios from "axios";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 function Signup() {
   const [data, setData] = useState({
     firstName: "",
@@ -31,52 +32,49 @@ function Signup() {
       return response.json();
     }).then((data)=>{
       setResponse(data.apierror.message)
-        //working
-      // console.log(response.json());
       console.log(data.apierror.message)
     });
-    // const response = await api.json();
-    // console.log(response);
+
   };
   return (
-    <div className="h-3/4 md:w-1/3 bg-white rounded-xl  drop-shadow absolute top-20 z-50 right-1/3 ">
-      <h6 className="text-2xl ml-44 mt-8">SIGN UP</h6>
-      <form className="ml-16" onSubmit={handleSubmit}>
+    <div className="h-3/4 md:w-1/3 bg-white rounded-xl  drop-shadow absolute top-20 z-50 right-1/3 pl-12">
+      <h6 className="text-2xl mt-2 text-yellow font-bold ml-12">SIGN UP</h6>
+      <form className="" onSubmit={handleSubmit}>
         <input
-          className="w-3/4 h-12 bg-gray pl-6 rounded-sm focus:outline-none mt-2"
+          className="w-3/4 h-10 bg-gray pl-6 rounded-sm focus:outline-none mt-2"
           placeholder="First Name"
           value={data.firstName}
           name="firstName"
           onChange={getData}
         ></input>
         <input
-          className="w-3/4 h-12 bg-gray pl-6 rounded-sm focus:outline-none mt-2"
+          className="w-3/4 h-10 bg-gray pl-6 rounded-sm focus:outline-none "
           placeholder="Last Name"
           value={data.lastName}
           name="lastName"
           onChange={getData}
         ></input>
         <input
-          className="w-3/4 h-12 bg-gray pl-6 rounded-sm focus:outline-none mt-2"
+          className="w-3/4 h-10 bg-gray pl-6 rounded-sm focus:outline-none"
           placeholder="phone"
           value={data.mobile}
           name="mobile"
           onChange={getData}
         ></input>
         <input
-          className="w-3/4 h-12 bg-gray pl-6 rounded-sm focus:outline-none mt-2"
+          className="w-3/4 h-10 bg-gray pl-6 rounded-sm focus:outline-none"
           placeholder="User Name"
           value={data.user}
         ></input>
         <input
-          className="w-3/4 h-12 bg-gray pl-6 rounded-sm focus:outline-none mt-2"
+          className="w-3/4 h-10 bg-gray pl-6 rounded-sm focus:outline-none"
           placeholder="email"
           value={data.email}
           name="email"
           onChange={getData}
         ></input>
         <input
-          className="w-3/4 h-12 bg-gray pl-6 rounded-sm focus:outline-none mt-2"
+          className="w-3/4 h-10 bg-gray pl-6 rounded-sm focus:outline-none"
           placeholder="password"
           value={data.password}
           name="password"
@@ -85,16 +83,18 @@ function Signup() {
         ></input>
 
         <div>
-          <input type="checkbox" className="mx-4 mt-8"></input>
-          <label>I aggree to the terms and conditions</label>
+          <p className="text-[12px]">Already have an account? <Link to="/signin" className="text-yellow">Sign In</Link></p>
+          <input type="checkbox" className="w-4 h-2 "></input>
+          <label className="text-[12px]">I aggree to the terms and conditions</label>
         </div>
         <button
-          className="h-8 w-1/2 bg-yellow text-white rounded-sm ml-12 mt-4"
+          className="h-8 w-1/2 bg-yellow text-white rounded-sm ml-4 mt-2"
           type="submit"
         >
           Submit
         </button>
-        <p className="text-red-300 ml-24">{response}</p>
+
+        <p className="text-red-300 ml-2 mt-2">{response}</p>
       </form>
     </div>
   );
