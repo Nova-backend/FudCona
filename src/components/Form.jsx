@@ -40,7 +40,7 @@ function Form () {
         };
     
     return(
-        <div className>
+        <div className="">
             <form action="" onSubmit={handleSubmit}>
                 <div className="container">
                 <svg className="top-svg" width="357" height="284" viewBox="0 0 357 284" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -55,6 +55,7 @@ function Form () {
 <svg className="bottom-svg" width="353" height="287" viewBox="0 0 353 287" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M321.243 321.946C227.731 401.002 84.2661 385.06 0.805113 286.338C13.8998 206.813 145.623 303.88 239.135 224.824C332.647 145.767 264.449 5.21256 339.442 0.0493526C422.903 98.7714 414.755 242.889 321.243 321.946Z" fill="#EFEFE3"/>
 </svg>
+
                     <div className="all">
                     
 
@@ -64,7 +65,7 @@ function Form () {
                     </div>
                     <div className="input">
                         <div className="welcome">
-                           <h2>Welcome back <br />
+                           <h2 className="text-yellow text-2xl font-bold">Welcome back <br />
                             to FudCona</h2> 
                         </div>
                         <div className="inputs">
@@ -75,17 +76,17 @@ function Form () {
                         <div className="pass-input">
                             <label htmlFor="Password">PASSWORD</label>
                             <input type="password" name="password" placeholder="Password" value={data.password} onChange={getData} required/>
-                            <a href="#">Forgot password?</a>
                         </div>
+                            <a href="#">Forgot password?</a>
                         </div>
                   
                         <div>
-                            <button type="submit" className="sbmt-btn">Log In</button>
+                            <button type="submit" className="sbmt-btn ml-16">Log In</button>
                         </div>
-                        <div className="signup">
+                        <div className="signup ml-12">
                             <p>Don't have an account?</p>
                            <Link to="/signup">
-                            <a href="#">SIGN UP</a>
+                            <a href="#" className="ml-2">SIGN UP</a>
                            </Link>
                         </div>
                         <p className="text-blue-500">{response}</p>

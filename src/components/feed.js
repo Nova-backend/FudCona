@@ -1,4 +1,4 @@
-import React from 'react'
+// import React from 'react'
 import {FaSearch,FaBell,FaPlus,FaEye} from 'react-icons/fa'
 function Feed() {
   return (
@@ -15,7 +15,7 @@ function Feed() {
         </div>
         {/* __________newclient______ */}
     </div>
-    <div className='bg-[#FAFAF5] xl:h-[140px] xl:mt-5 rounded-[10px] xl:w-[768px] absolute xl:ml-[10.6%] drop-shadow-xl shadow-black w-[210px] ml-1 mt-3 h-[150px] '>
+    <div className='bg-[#FAFAF5] xl:h-[140px] xl:mt-5 rounded-[10px] xl:w-[768px] xl:ml-72 drop-shadow-xl shadow-black w-[210px] mt-3 h-[150px] '>
        <p className='xl:text-[20px] font-semibold ml-3 mt-4  '>New Client</p>
        <p className='text-[15px] mt-[50px] ml-3 opacity-40 '>Add new client </p>
        <p className='h-[0.8px] w-[90%] mt-3 ml-3 bg-black'></p>

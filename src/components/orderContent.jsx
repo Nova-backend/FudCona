@@ -1,5 +1,6 @@
-import React from 'react'
-import Order from './order'
+// import React from 'react'
+import Order from './order';
+
 
 function OrderContent() {
   const orders = [{
@@ -114,4 +115,4 @@ const services = [
   )
 }
 
-export default OrderContent
+export default OrderContent;
