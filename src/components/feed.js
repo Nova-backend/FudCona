@@ -100,7 +100,7 @@ function Feed() {
             <FaEye className='xl:text-[40px] mt-2 text-[#989A38]  '/>
           </div>
           <div className='ml-[18%] '>
-            <button className='h-7 w-[80px] bg-[#C4C4C4] border-2 border-[#989A38]  text-[14px] font-semibold mt-1 -ml-[14px] rounded-[5px]  '>RESTO</button>
+            <button className='h-7 w-[80px] bg-[#C4C4C4] border-2 border-[#989A38]  text-[14px] font-semibold mt-1 -ml-[14px] rounded-[5px]'>RESTO</button>
           </div>
           </div>
      </div>

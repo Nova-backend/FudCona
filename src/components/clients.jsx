@@ -2,7 +2,7 @@ import Feed from "./feed";
 import Left from "./left";
 import Sidebar from "./sidebar";
 
-function Client(){
+function Clients(){
     return(
         <div>
         <Sidebar/>
@@ -10,4 +10,4 @@ function Client(){
         </div>
     )
 }
-export default Client;
+export default Clients;
