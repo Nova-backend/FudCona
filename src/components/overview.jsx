@@ -6,7 +6,6 @@ function Overview() {
   return (
       <div className=' h-screen w-full'>
         <Sidebar />
-        
         <div className='flex  mt-12 content-center ' style={{justifyContent:"center"}}>
             <div className='flex pl-8 '>
             <div className='flex gap-4 w-full'>

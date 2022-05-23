@@ -16,32 +16,32 @@ function Sidebar() {
           Fud<span className="text-3xl text-[#989A38]">Cona</span>
         </h1>
         <div className=" mt-8 text-sm flex flex-col gap-2 ml-8">
-        <Link to="/body">
-          <i className="text-white flex gap-4 hover:bg-slate-800 h-12 items-center pl-2">
-            <FaListUl className=""/>
-            <span className="font-normal ml-4">Overview</span>
-          </i>
-        </Link>
-        <Link t0='/clients'>
-        <i className="text-white flex gap-8 hover:bg-slate-800 h-12 items-center pl-2">
-          <FaTable />
-          <span className="font-normal">Clients</span>
-        </i>
-        </Link>
-        {/* <Link to='./orderContent'> */}
-        <Link to="/orders">
-          <i className="text-white flex gap-8 hover:bg-slate-800 h-12 items-center pl-2">
-            <FaJediOrder />
-            <span className="font-normal">Orders</span>
-          </i>
-        </Link>
-        {/* </Link> */}
-        <Link to='/menu'>
-        <i className="text-white flex gap-8 hover:bg-slate-800 h-12 items-center pl-2">
-          <FaChartPie />
-          <span className="font-normal">Menu</span>
-        </i>
-        </Link>
+          <Link to="/body">
+            <i className="text-white flex gap-4 hover:bg-slate-800 h-12 items-center pl-2">
+              <FaListUl className="" />
+              <span className="font-normal ml-4">Overview</span>
+            </i>
+          </Link>
+          <Link to="/feed">
+            <i className="text-white flex gap-8 hover:bg-slate-800 h-12 items-center pl-2">
+              <FaTable />
+              <span className="font-normal">Clients</span>
+            </i>
+          </Link>
+          {/* <Link to='./orderContent'> */}
+          <Link to="/orders">
+            <i className="text-white flex gap-8 hover:bg-slate-800 h-12 items-center pl-2">
+              <FaJediOrder />
+              <span className="font-normal">Orders</span>
+            </i>
+          </Link>
+          {/* </Link> */}
+          <Link to="/menu">
+            <i className="text-white flex gap-8 hover:bg-slate-800 h-12 items-center pl-2">
+              <FaChartPie />
+              <span className="font-normal">Menu</span>
+            </i>
+          </Link>
         </div>
 
         <div className="h-64 w-56 bg-[#989A38] absolute bottom-0 ml-2 pt-20 pl-8 ">
@@ -51,11 +51,11 @@ function Sidebar() {
               <span className="">Account</span>
             </i>
           </Link>
-          <Link to='/body'>
-          <i className="text-white flex gap-8 hover:bg-slate-300 h-12 items-center pl-2 mt-2">
-            <FaListUl />
-            <span className="font-normal">Overview</span>
-          </i>
+          <Link to="/body">
+            <i className="text-white flex gap-8 hover:bg-slate-300 h-12 items-center pl-2 mt-2">
+              <FaListUl />
+              <span className="font-normal">Overview</span>
+            </i>
           </Link>
         </div>
       </div>
