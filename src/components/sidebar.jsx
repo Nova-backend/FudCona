@@ -45,7 +45,7 @@ function Sidebar() {
         </div>
 
         <div className="h-64 w-56 bg-[#989A38] absolute bottom-0 ml-2 pt-20 pl-8 ">
-          <Link to="./account">
+          <Link to="/account">
             <i className="text-white flex gap-8 hover:bg-slate-300 h-12 items-center pl-2 rounded-sm">
               <FaUser />
               <span className="">Account</span>

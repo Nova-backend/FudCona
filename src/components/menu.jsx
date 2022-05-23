@@ -2,7 +2,7 @@
 import Sidebar from './sidebar'
 import { FaBell, FaSearch, FaPlusCircle,FaArrowAltCircleRight} from 'react-icons/fa'
 import image from '../Images/image.jpg'
-function Overview() {
+function Menu() {
   return (
       <div className=' h-screen w-full'>
         <Sidebar />
@@ -136,9 +136,9 @@ function Overview() {
                <i className='text-4xl text-[#989A38] pt-8 pl-8'><FaArrowAltCircleRight /></i>
                </div>
               </div>
-              <div className='absolute right-32  text-sm'>
+              <div className='absolute right-20 text-sm'>
               <div className='block'>
-              <div className='mt-60' >
+              <div className='mt-60 ' >
                <h1 className='flex text-[#989A38] text-xl ml-44'>Add Item</h1>
                <div className='flex'>
                <h1 className=' mt-10 ml-40 text-lg'>Create new Item</h1>
@@ -183,4 +183,4 @@ function Overview() {
   )
 }
 
-export default Overview;
+export default Menu;

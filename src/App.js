@@ -10,8 +10,9 @@ import OrderContent from './components/orderContent';
 import Client from './components/client';
 import RestoInfo from './components/RestoInfo';
 import Clients from './components/clients';
-import Overview from './components/overview';
+import Overview from './components/menu';
 import Body from './components/body';
+import Menu from "./components/menu";
 function App() {
   return (
       <div className='h-screen w-full'>
@@ -29,6 +30,8 @@ function App() {
           <Route path='/feed' exact element={< Clients/>}/>
           <Route path='/overview' exact element={<Overview/>}/>
           <Route path='/body' exact element  = {<Body/>}/>
+          <Route path='/menu' exact element={<Menu/>}/>
+
         </Routes>
       </Router>
       </div>
