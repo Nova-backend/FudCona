@@ -48,27 +48,31 @@ function Order(props) {
 
                             <div className='flex'>
                                 
-                                <h1 className='text-xl text-[#989A38] pt-14 pl-12' >{order.OrderDesc}</h1> 
+                                <h1 className='text-xl text-[#989A38] pt-14 pl-12' >{order.createdBy}</h1> 
                                 <div className='h-12 w-[2px] bg-[#989A38] ml-3 mt-12'></div> 
                             </div>
                             <div className='pt-6 pl-12'>
 
-                                <p >{order.describeContent}</p>
-                                <p>{order.numberContent}</p>
+                                <p >{order.orderDetails.map((item)=>{
+                                    return item.item.description
+                                })}</p>
+                                <p>{order.numberOfProducts}</p>
                                 <div className='flex'>
                                     <div className='h-[1px] w-12 bg-[#989A38] ml-2 mt-6'></div>
-                                    <p className='pt-2 pl-2'>{order.tableContent}</p>
+                                    <p className='pt-2 pl-2'>{order.orderType}</p>
                                     <div className='h-[1px] w-12 bg-[#989A38] ml-2 mt-6'></div>
                                 </div>
                             </div>
                             <div className='mt-6'>
-                                <h1 className='text-2xl text-[#989A38] pl-4'>{order.moneyContent}</h1>
+                                <h1 className='text-2xl text-[#989A38] pl-4'>{order.orderDetails.map((item)=>{
+                                    return item.item.unitPrice
+                                })}</h1>
                                 <div className='flex'>
                                     <div className='h-[1px] w-8 bg-[#989A38] ml-2 mt-6'></div>
-                                    <p className='pt-2 pl-2'>{order.roleContent}</p>
+                                    <p className='pt-2 pl-2'>{order.status}</p>
                                     <div className='h-[1px] w-8 bg-[#989A38] pl-4 ml-2 mt-6'></div>
                                 </div>
-                                <p className='pl-6'>{order.telContent}</p>
+                                <p className='pl-6'>{order.customer.lastName}</p>
                             </div>
 
                         </div>))}
@@ -77,10 +81,10 @@ function Order(props) {
 
                    
                    <div className='block ml-24'>
-                   {services.map(service => (
-                <div className='h-20 w-60  border-b-2 border-gray-400 '>
-                    <h1 className='text-gray-400 text-xl text-center pt-4 '>{service.serviceGiven}</h1>
-                    <h1 className='text-3xl text-center'>{service.numberService}</h1>
+                   {orders.map(order => (
+                <div className='h-12 w-60 border-b-2 border-gray-400 '>
+                    <h1 className='text-gray-400 text-xl text-center pt-4 '>{order.serviceProvider.name}</h1>
+                    <h1 className='text-3xl text-center'>{order.numberService}</h1>
                 </div>))}
                 
                 </div>
