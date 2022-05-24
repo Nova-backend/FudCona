@@ -1,6 +1,10 @@
 import axios from "axios";
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import {VscAccount} from 'react-icons/vsc'
+import {FiPhone} from 'react-icons/fi'
+import {MdOutlineMail} from 'react-icons/md'
+import {RiLockPasswordLine} from 'react-icons/ri'
 function Signup() {
   const [data, setData] = useState({
     firstName: "",
@@ -41,46 +45,63 @@ function Signup() {
       <h6 className="text-2xl mt-2 text-yellow font-bold ml-12">SIGN UP</h6>
       <form className="" onSubmit={handleSubmit}>
         <input
-          className="w-3/4 h-10 bg-gray pl-6 rounded-sm focus:outline-none mt-2"
+          className="w-3/4 h-10 bg-gray pl-[30px] rounded-sm focus:outline-none mt-2 relative "
           placeholder="First Name"
           value={data.firstName}
           name="firstName"
           onChange={getData}
         ></input>
+        <i className="absolute top-[10%] left-[10%]">
+        <VscAccount/>
+</i>
         <input
-          className="w-3/4 h-10 bg-gray pl-6 rounded-sm focus:outline-none "
+        
+          className="w-3/4 h-10 bg-gray pl-[30px] rounded-sm focus:outline-none relative   "
           placeholder="Last Name"
           value={data.lastName}
           name="lastName"
           onChange={getData}
         ></input>
+        <i className="absolute top-[20%] left-[10%]">
+        <VscAccount/>
+</i>
         <input
-          className="w-3/4 h-10 bg-gray pl-6 rounded-sm focus:outline-none"
+          className="w-3/4 h-10 bg-gray pl-[30px] rounded-sm focus:outline-none relative"
           placeholder="phone"
           value={data.mobile}
           name="mobile"
           onChange={getData}
         ></input>
+        <i className="absolute top-[30%] left-[10%]"><FiPhone/></i>
         <input
-          className="w-3/4 h-10 bg-gray pl-6 rounded-sm focus:outline-none"
+          className="w-3/4 h-10 bg-gray pl-[30px] rounded-sm focus:outline-none relative"
           placeholder="User Name"
           value={data.user}
         ></input>
+         <i className="absolute top-[40%] left-[10%]">
+        <VscAccount/>
+</i>
         <input
-          className="w-3/4 h-10 bg-gray pl-6 rounded-sm focus:outline-none"
+          className="w-3/4 h-10 bg-gray pl-[30px] rounded-sm focus:outline-none"
           placeholder="email"
           value={data.email}
           name="email"
           onChange={getData}
         ></input>
+        <i className="absolute top-[50%]  left-[10%]">
+          <MdOutlineMail/>
+        </i>
         <input
-          className="w-3/4 h-10 bg-gray pl-6 rounded-sm focus:outline-none"
+          className="w-3/4 h-10 bg-gray pl-[30px] rounded-sm focus:outline-none relative"
           placeholder="password"
           value={data.password}
           name="password"
           type="password"
           onChange={getData}
         ></input>
+        <i className="absolute top-[60%]  left-[10%]">
+          <RiLockPasswordLine/>
+        </i>
 
         <div>
           <p className="text-[12px]">Already have an account? <Link to="/signin" className="text-yellow">Sign In</Link></p>
