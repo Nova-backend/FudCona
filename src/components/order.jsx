@@ -11,19 +11,20 @@ function Order(props) {
 
     return (
         <div>
-        <div className='flex bg-[#FAFAF5] w-full h-auto Order overflow-x-hidden '>
+        <div className='flex bg-[#FAFAF5] w-full h-28 Order  overflow-x-hidden '>
             <Sidebar/>
             <h1 className='text-xl pt-12 pl-8 bolder'>Orders</h1>
-            <div className='flex  mt-10 content-center' style={{ justifyContent: "center" }}>
+            <div className='flex  content-center' style={{ justifyContent: "center" }}>
 
-                <i className='text-gray-300 text-4xl absolute right-[13em] pt-2'><FaBell /></i>
-                <i className='text-gray-300 text-4xl absolute right-[11em] pt-2'><FaSearch /></i>
-                <div className='h-16 w-[2px] bg-[#989A38]  absolute right-[23em]'></div>
-                <p className='absolute right-56 pt-4 text-lg font-quickSand font-bold'>Ingabire Divine</p>
-                <img src={image} alt="" className='absolute h-20 w-20 rounded-full right-24' />
+                <i className='text-gray-500 text-2xl absolute right-[15em] pt-8'><FaBell /></i>
+                <i className='text-gray-500 text-2xl absolute right-[12em] pt-8'><FaSearch /></i>
+
+                <div className='h-16 w-[2px] bg-[#989A38] mt-4  absolute right-[16em]'></div>
+                <p className='absolute right-28 pt-10 text-sm font-quickSand font-bold'>Ingabire Divine</p>
+                <img src={image} alt="" className='absolute h-16 w-16 rounded-full mt-4 right-8' />
             </div>
             </div>
-            <div className='h-[90vh] w-[78vw] bg-white rounded-2xl absolute right-12'>
+            <div className='h-[90vh] w-[78vw] bg-white rounded-2xl absolute right-12 '>
                 <div className='flex'>
                     <div className='block pt-6 pl-8'>
                         
@@ -64,15 +65,15 @@ function Order(props) {
                                 </div>
                             </div>
                             <div className='mt-6'>
-                                <h1 className='text-2xl text-[#989A38] pl-4'>{order.orderDetails.map((item)=>{
+                                <h1 className='text-2xl text-[#989A38] pl-52'>{order.orderDetails.map((item)=>{
                                     return item.item.unitPrice
                                 })}</h1>
-                                <div className='flex'>
-                                    <div className='h-[1px] w-8 bg-[#989A38] ml-2 mt-6'></div>
+                                <div className='flex ml-20'>
+                                    <div className='h-[1px] w-8 bg-[#989A38] ml-16 mt-6'></div>
                                     <p className='pt-2 pl-2'>{order.status}</p>
                                     <div className='h-[1px] w-8 bg-[#989A38] pl-4 ml-2 mt-6'></div>
                                 </div>
-                                <p className='pl-6'>{order.customer.lastName}</p>
+                                <p className='pl-48'>{order.customer.lastName}</p>
                             </div>
 
                         </div>))}
@@ -90,7 +91,7 @@ function Order(props) {
                 </div>
                  
                   <div className=''>
-                   <div className='absolute right-2 top-[72vh]'>
+                   <div className='absolute right-0 top-[72vh]'>
                        <div className='h-32 w-72 rounded-t-2xl border-2 border-solid border-slate-200 absolute right-0'>
                            <div>
                                <h1 className='pl-6 pt-6'>Add Order</h1>

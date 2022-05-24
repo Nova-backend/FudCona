@@ -2,7 +2,7 @@
 // import Order from './order'
 import OrderContent from './orderContent'
 import { BrowserRouter as Router,Routes,Route} from 'react-router-dom'
-import Overview from './overview'
+import Overview from './menu'
 import Client from './client'
 
 function CombinationPages() {
