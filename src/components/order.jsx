@@ -81,9 +81,9 @@ function Order(props) {
                       </div>
 
                    
-                   <div className='block ml-24'>
+                   <div className='block ml-24 overflow-y-scroll  h-96 scroll-m-2 scrollbar-thin scrollbar-thumb-custom scrollbar-track-custom-light'>
                    {orders.map(order => (
-                <div className='h-12 w-60 border-b-2 border-gray-400 '>
+                <div className='h-12 w-60 border-b border-gray-200 '>
                     <h1 className='text-gray-400 text-xl text-center pt-4 '>{order.serviceProvider.name}</h1>
                     <h1 className='text-3xl text-center'>{order.numberService}</h1>
                 </div>))}

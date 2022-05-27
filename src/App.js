@@ -15,7 +15,9 @@ import Body from './components/body';
 import Menu from "./components/menu";
 function App() {
   return (
+
       <div className='h-screen w-full'>
+        {/* <Feed/> */}
       <Router>
         <Routes>
           <Route path='/' exact element={<Welcome/>}/>

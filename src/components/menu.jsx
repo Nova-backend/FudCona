@@ -1,9 +1,32 @@
 // import React from 'react'
 import Sidebar from './sidebar'
-import { FaBell, FaSearch, FaPlusCircle,FaArrowAltCircleRight} from 'react-icons/fa'
+import {FaArrowAltCircleRight} from 'react-icons/fa'
+import {FaBell} from 'react-icons/fa'
+import {FaSearch} from 'react-icons/fa'
+import {FaPlusCircle} from 'react-icons/fa'
 import image from '../Images/image.jpg'
+import { useEffect, useState } from 'react'
+
 function Menu() {
+  
+    let [menuItems, setMenuItems] = useState([])
+    async function getMenuItems (){
+        const api = await fetch('http://196.223.240.154:8099/supapp/api/menu-items', {
+            method: 'GET',
+        })
+        const data = await api.json()
+        // const menuItems = data.content   
+        setMenuItems(data.content)
+        console.log(menuItems);
+      
+    }
+    useEffect(()=>{
+        getMenuItems()
+    }, [])
+     
+    
   return (
+      
       <div className=' h-screen w-full'>
         <Sidebar />
         <div className='flex  mt-12 content-center ' style={{justifyContent:"center"}}>
@@ -39,18 +62,35 @@ function Menu() {
                 <button  className='h-14 w-40 bg-white border-[1px] border-[#989A38] text-[#989A38] rounded-lg ml-2'>Appetizer</button>
                </div>
                </div>
-               <div className='overflow-y-scroll h-[60vh] scroll-m-2 scrollbar-thin scrollbar-thumb-custom scrollbar-track-custom-light  '>
-               <div className='bg-white h-32 rounded-2xl ml-24 pt-4 pl-5 mt-2 flex'>
+               <div className='overflow-y-scroll h-[60vh] scroll-m-2 scrollbar-thin scrollbar-thumb-custom scrollbar-track-custom-light'>
+                {
+                    menuItems.map(item => {
+                    
+               return(
+                <div className='bg-white h-32 rounded-2xl ml-24 pt-4 pl-5 mt-2 flex'>
                 <img src={image} alt="" className='h-12 w-12 rounded-lg ' />
-                <div className='pl-8 pt-'>
-                <p>Kafir lime Vodka,Lemongrass,Ginger</p>
-                <p>Tom Yummy-12.5</p>
-                <p className='text-[#989A38]'>Frw,5000</p>
+                <div className='pl-8'>
+                <p>{item.name}</p>
+                <p>{item.description}</p>
+                <p className='text-[#989A38]'>{item.unitPrice}</p>
                 </div>
-             
                </div>
+                
+               )
+            })
+        }
+        </div>
               
-               <div className='bg-white h-32 w-[38vw] rounded-2xl ml-24  pl-5 mt- flex'>
+               {/* <div className='bg-white h-32 w-[38vw] rounded-2xl ml-24  pl-5 mt- flex'>
+                <img src={image} alt="" className='h-12 w-12 rounded-lg ' />
+                <div className='pl-8 pt-'>
+                <p>Kafir lime Vodka,Lemongrass,Ginger</p>
+                <p>Tom Yummy-12.5</p>
+                <p className='text-[#989A38]'>Frw,5000</p>
+                </div>
+             
+               </div> */}
+               {/* <div className='bg-white h-32 w-[38vw] rounded-2xl ml-24  pl-5 mt- flex'>
                 <img src={image} alt="" className='h-12 w-12 rounded-lg ' />
                 <div className='pl-8 pt-'>
                 <p>Kafir lime Vodka,Lemongrass,Ginger</p>
@@ -67,8 +107,8 @@ function Menu() {
                 <p className='text-[#989A38]'>Frw,5000</p>
                 </div>
              
-               </div>
-               <div className='bg-white h-32 w-[38vw] rounded-2xl ml-24  pl-5 mt- flex'>
+               </div> */}
+               {/* <div className='bg-white h-32 w-[38vw] rounded-2xl ml-24  pl-5 mt- flex'>
                 <img src={image} alt="" className='h-12 w-12 rounded-lg ' />
                 <div className='pl-8 pt-'>
                 <p>Kafir lime Vodka,Lemongrass,Ginger</p>
@@ -76,8 +116,8 @@ function Menu() {
                 <p className='text-[#989A38]'>Frw,5000</p>
                 </div>
              
-               </div>
-               <div className='bg-white h-32 w-[38vw] rounded-2xl ml-24  pl-5 mt- flex'>
+               </div> */}
+               {/* <div className='bg-white h-32 w-[38vw] rounded-2xl ml-24  pl-5 mt- flex'>
                 <img src={image} alt="" className='h-12 w-12 rounded-lg ' />
                 <div className='pl-8 pt-'>
                 <p>Kafir lime Vodka,Lemongrass,Ginger</p>
@@ -85,8 +125,8 @@ function Menu() {
                 <p className='text-[#989A38]'>Frw,5000</p>
                 </div>
              
-               </div>
-               <div className='bg-white h-32 w-[38vw] rounded-2xl ml-24  pl-5 mt- flex'>
+               </div> */}
+               {/* <div className='bg-white h-32 w-[38vw] rounded-2xl ml-24  pl-5 mt- flex'>
                 <img src={image} alt="" className='h-12 w-12 rounded-lg ' />
                 <div className='pl-8 pt-'>
                 <p>Kafir lime Vodka,Lemongrass,Ginger</p>
@@ -94,8 +134,8 @@ function Menu() {
                 <p className='text-[#989A38]'>Frw,5000</p>
                 </div>
              
-               </div>
-               <div className='bg-white h-32 w-[38vw] rounded-2xl ml-24  pl-5 mt- flex'>
+               </div> */}
+               {/* <div className='bg-white h-32 w-[38vw] rounded-2xl ml-24  pl-5 mt- flex'>
                 <img src={image} alt="" className='h-12 w-12 rounded-lg ' />
                 <div className='pl-8 pt-'>
                 <p>Kafir lime Vodka,Lemongrass,Ginger</p>
@@ -103,8 +143,8 @@ function Menu() {
                 <p className='text-[#989A38]'>Frw,5000</p>
                 </div>
              
-               </div>
-               <div className='bg-white h-32 w-[38vw] rounded-2xl ml-24  pl-5 mt- flex'>
+               </div> */}
+               {/* <div className='bg-white h-32 w-[38vw] rounded-2xl ml-24  pl-5 mt- flex'>
                 <img src={image} alt="" className='h-12 w-12 rounded-lg ' />
                 <div className='pl-8 pt-'>
                 <p>Kafir lime Vodka,Lemongrass,Ginger</p>
@@ -112,25 +152,15 @@ function Menu() {
                 <p className='text-[#989A38]'>Frw,5000</p>
                 </div>
              
-               </div>
-               <div className='bg-white h-32 w-[38vw] rounded-2xl ml-24  pl-5 mt- flex'>
+               </div> */}
+               {/* <div className='bg-white h-32 w-[38vw] rounded-2xl ml-24  pl-5 mt- flex'>
                 <img src={image} alt="" className='h-12 w-12 rounded-lg ' />
                 <div className='pl-8 pt-'>
                 <p>Kafir lime Vodka,Lemongrass,Ginger</p>
                 <p>Tom Yummy-12.5</p>
                 <p className='text-[#989A38]'>Frw,5000</p>
                 </div>
-             
-               </div>
-               <div className='bg-white h-32 w-[38vw] rounded-2xl ml-24  pl-5 mt- flex'>
-                <img src={image} alt="" className='h-12 w-12 rounded-lg ' />
-                <div className='pl-8 pt-'>
-                <p>Kafir lime Vodka,Lemongrass,Ginger</p>
-                <p>Tom Yummy-12.5</p>
-                <p className='text-[#989A38]'>Frw,5000</p>
-                </div>
-                </div>
-               </div>
+                </div> */}
                <div className='flex ml-[25em] mb-8'>
                <h1 className='text-4xl text-[#989A38] text-center pt-6'>More</h1>
                <i className='text-4xl text-[#989A38] pt-8 pl-8'><FaArrowAltCircleRight /></i>
@@ -179,6 +209,7 @@ function Menu() {
 
              
         </div>
+
    
   )
 }

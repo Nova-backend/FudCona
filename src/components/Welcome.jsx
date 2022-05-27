@@ -6,8 +6,8 @@ import { Link } from "react-router-dom";
 import { MdOutlineAccountCircle } from "react-icons/md";
 import { AiOutlineProfile } from "react-icons/ai";
 import { HiClipboardCopy } from "react-icons/hi";
-import { HiOutlineSearch } from "react-icons/hi";
-import { AiOutlineBars } from "react-icons/ai";
+// import { HiOutlineSearch } from "react-icons/hi";
+// import { AiOutlineBars } from "react-icons/ai";
 
 function Welcome() {
   return (

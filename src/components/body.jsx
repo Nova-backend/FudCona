@@ -44,11 +44,11 @@ function Body() {
 
     <div>
       <Sidebar/>
-      <div className="bg-[#FAFAF5] h-[150vh] w-[85%] float-right right-0">
+      <div className="bg-[#FAFAF5] h-[160vh] w-[85%] float-right right-0">
         <h3 className="p-[10px] pl-[55px] font-[800] text-[25px] mt-[-5px]">
           Overview
         </h3>
-        <div className="grid lg:grid-cols-3 gap-[200px] p-[25px] w-[70%] absolute left-[15.5rem] top-[30px]">
+        <div className="grid lg:grid-cols-3 gap-[200px] p-[25px] w-[70%] absolute left-[22.8rem] top-[30px]">
           <div className="h-[160px] w-[320px] bg-white hover:bg-[#989A38] border-[10px to-black] block p-[30px] border-solid border-2 border-[#989A38] rounded-lg">
             <h4 className="text-center font-[100] p-[5px] text-[30px] opacity-[0.8] ">
               clients
@@ -59,7 +59,7 @@ function Body() {
             <p className="text-center text-white font-[100] p-[15px] text-[20px] ml-[-12px]  opacity-[0.8]">
               Revenew(frw)
             </p>
-            <h1 className="text- text-white font-[600] p-[4px] ml-[-15px] text-[15px]">
+            <h1 className="text- text-white font-[600] p-[4px] ml-[55px] text-[15px]">
               434343434
             </h1>
           </div>
@@ -82,8 +82,9 @@ function Body() {
             <li className=" h-[4px] w-[40px] bg-[#989A38] text-[18px] opacity-50"></li>
             <li className="p-[10px] font-light">Months</li>
           </ul>
-          <div className="w-[700px] h-[260px] ml-[4rem] pt-[50px]">
+          <div className="w-[750px] h-[260px] ml-[4rem] pt-[50px] ">
             <Graph />
+            
           </div>
           <div className="float-right mt-[-20rem] mr-[-2px]  ">
             <div className="h-[100px] w-[250px] border-solid border-2 border-[#989A38]   pl-[90px] pr-[110px]">
@@ -112,13 +113,13 @@ function Body() {
         </div>
         <div className="flex ">
           <div className="absolute bottom-[10px] top-[100%] mt[40px]] left-[18%]  p-8 h-[55%] ">
-            <div className="grid lg:grid-cols-2 gap-[28px] ml-[-30px] mt[60px]">
+            <div className="grid lg:grid-cols-2 gap-[45px] ml-[-30px] mt[60px]">
               
               {items.map((item) => {
                 const { id, head, sales, saleName, name } = item;
                 return (
                   <div
-                    className="h-[180px] w-[350px] bg-white p-[5px] pl-[30px] bock shadow-[#c5b9b9] shadow-lg"
+                    className="h-[180px] w-[400px] bg-white p-[5px] pl-[30px] bock shadow-[#c5b9b9] shadow-lg"
                     key={id}
                   >
                     <div className="flex">
@@ -145,7 +146,7 @@ function Body() {
               })}
             </div>
           </div>
-          <div className=" bg-white h-[53.5%] mt-[35px] w-[26%] absolute top-[100%] pl-[20px] right-[1%] shadow-[#c5b9b9] shadow-lg">
+          <div className=" bg-white h-[49.5%] mt-[35px] w-[28%] absolute top-[100%] pl-[20px] right-[1%] shadow-[#c5b9b9] shadow-lg">
             <div className="h-[180px] w-[280px] bg-white p-[5px] pl-[20px]  bock">
               <div className="flex ">
                 <div className="block ">

@@ -1,6 +1,25 @@
 // import React from 'react'
+import { data } from 'autoprefixer';
+import { useEffect, useState } from 'react';
 import {FaSearch,FaBell,FaPlus,FaEye} from 'react-icons/fa'
 function Feed() {
+  const token = localStorage.getItem('token')
+  const [clients, setClients] = useState([]);
+  async function getCLients (){
+    const api = await fetch("http://196.223.240.154:8099/supapp/api/users", {
+      method: 'GET', 
+      headers:{
+        Authorization: 'Bearer ' + token
+      }
+    });
+    const data = await api.json()
+    setClients(data.content)  
+    console.log(data) 
+  }
+  useEffect(()=>{
+   getCLients();
+   console.log(clients)
+  }, [])
   return (
     <div>
         {/* _________top________ */}
@@ -22,7 +41,7 @@ function Feed() {
        <FaPlus className='text-[19px] text-[#CCCCCC] ml-[90%] -mt-9 '/>
     </div>
     {/* _____________all clients________ */}
-     <div className='xl:h-[500px] xl:w-[770px] bg-[#FAFAF5]  absolute xl:top-[42%] xl:ml-[23em] top-[25%] h-[470px]  w-[210px] ml-1 pl-16 '>
+     <div className='xl:h-[500px] xl:w-[770px] bg-[#FAFAF5]  absolute xl:top-[42%] xl:ml-[23em] top-[25%] h-[470px]  w-[210px] ml-1 pl-16 overflow-y-scroll   scroll-m-2 scrollbar-thin scrollbar-thumb-custom scrollbar-track-custom-light'  >
           <p className='xl:text-[20px] font-semibold ml-3 mt-2 '>All clients</p>
           <div className=' flex ml-[13px] mt-6 xl:text-[18px] xl:space-x-[70px] opacity-70 '>
             <p>client details </p>
@@ -31,7 +50,7 @@ function Feed() {
             <p>Category</p>
           </div>
 
-          <div className='flex ml-3  mt-10 mb-[7%]   '>
+          {/* <div className='flex ml-3  mt-10 mb-[7%]   '>
 
           <div className=''>
          <p className=' font-semibold xl:text-[17px] mb-1 '>Say Restuarant </p>
@@ -47,28 +66,34 @@ function Feed() {
           <div className='ml-[18%] '>
             <button className='xl:h-7 xl:w-[80px] bg-[#C4C4C4] border-2 border-[#989A38]  text-[14px] font-semibold mt-1 -ml-[14px] rounded-[5px]  '>RESTO</button>
           </div>
-          </div>
+          </div> */}
           
           {/* _______second_______ */}
-          <div className='flex ml-3  mt-4 mb-[7%]   '>
+          {
+            clients.map((client)=>{
+           return(
+            <div className='flex ml-3  mt-4 mb-[7%] '>
 
-          <div className=''>
-         <p className=' font-semibold xl:text-[17px] mb-1 '>choose kigali</p>
-         <p className='opacity-70 text-[14px] '>Updated yesterday </p>
-          </div>
-          <div className='ml-[7%] '>
-            <p className=' font-semibold xl:text-[17px] mb-1 '>234500 FRW</p>
-            <p className='opacity-70 text-[14px] '>On 2345000</p>
-          </div>
-          <div className='ml-[6%] '>
-            <FaEye className='xl:text-[40px] mt-2 ml-14 text-[#989A38]  '/>
-          </div>
-          <div className='ml-[18%] '>
-            <button className='h-7 w-[80px] bg-[#C4C4C4] border-2 border-[#989A38]  text-[14px] font-semibold mt-1 -ml-[14px] rounded-[5px]  '>RESTO</button>
-          </div>
-          </div>
+            <div className=''>
+           <p className=' font-semibold xl:text-[17px] mb-1 '>{client.firstName}</p>
+           <p className='opacity-70 text-[14px] '>{client.mobile}</p>
+            </div>
+            <div className='ml-[7%] '>
+              <p className=' font-semibold xl:text-[17px] mb-1 '>{client.email}</p>
+              <p className='opacity-70 text-[14px] '>{client.status}</p>
+            </div>
+            <div className='ml-[6%] '>
+              <FaEye className='xl:text-[40px] mt-2 ml-14 text-[#989A38]  '/>
+            </div>
+            <div className='ml-[18%] '>
+              <button className='h-7 w-[80px]  text-[14px] font-semibold mt-1 -ml-[14px] rounded-[5px]  '>RESTO</button>
+            </div>
+            </div>
+           )
+          })
+        }
           {/* ________third________ */}
-          <div className='flex ml-3  mt-4 mb-[7%]   '>
+          {/* <div className='flex ml-3  mt-4 mb-[7%]   '>
 
           <div className=''>
          <p className=' font-semibold text-[17px] mb-1 '>Burger planet </p>
@@ -84,9 +109,9 @@ function Feed() {
           <div className='ml-[18%] '>
             <button className='h-7 w-[80px] bg-[#C4C4C4] border-2 border-[#989A38]  text-[14px] font-semibold mt-1 -ml-[14px] rounded-[5px]  '>RESTO</button>
           </div>
-          </div>
+          </div> */}
           {/* _______________fourth_________ */}
-          <div className='flex ml-3  mt-4 mb-[7%]   '>
+          {/* <div className='flex ml-3  mt-4 mb-[7%]   '>
 
           <div className=''>
          <p className=' font-semibold text-[17px] mb-1 '>M Hotel </p>
@@ -102,7 +127,7 @@ function Feed() {
           <div className='ml-[18%] '>
             <button className='h-7 w-[80px] bg-[#C4C4C4] border-2 border-[#989A38]  text-[14px] font-semibold mt-1 -ml-[14px] rounded-[5px]'>RESTO</button>
           </div>
-          </div>
+          </div> */}
      </div>
     </div>
   )

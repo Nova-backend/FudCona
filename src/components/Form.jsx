@@ -1,7 +1,9 @@
 import React, { useState} from "react";
 import './Form.css';
 import {Link, useNavigate} from 'react-router-dom';
-
+import {RiLockPasswordLine} from 'react-icons/ri';
+import {MdOutlineMail} from 'react-icons/md'
+import {BiShow} from 'react-icons/bi'
 
 function Form () {
     const [data, setData] = useState({
@@ -71,11 +73,14 @@ function Form () {
                         <div className="inputs">
                         <div className="email-input">
                             <label htmlFor="Email">EMAIL</label>
-                            <input type="email" name="login" placeholder = "Email" value={data.email} onChange={getData} required/>
+                            <input type="email" name="login" placeholder = "Email" value={data.email} onChange={getData} required className="relative pl-[30px]"/>
+                            <i className=" absolute left-[61%] top-[27.5%]"><MdOutlineMail/></i>
                         </div>
                         <div className="pass-input">
                             <label htmlFor="Password">PASSWORD</label>
-                            <input type="password" name="password" placeholder="Password" value={data.password} onChange={getData} required/>
+                            <input type="password" name="password" placeholder="Password" value={data.password} onChange={getData} required className="relative pl-[30px]"/>
+                            <i className=" absolute left-[61%] top-[37.5%]"><RiLockPasswordLine/></i>
+                            <i className=" absolute left-[79%] top-[37.5%]"><BiShow/></i>
                         </div>
                             <a href="#">Forgot password?</a>
                         </div>
