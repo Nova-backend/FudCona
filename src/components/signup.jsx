@@ -26,7 +26,7 @@ function Signup() {
     //   })
 
     const api = await fetch(
-      "http://196.223.240.154:8099/supapp/api/auth/client/signup",
+      "https://196.223.240.154:8099/supapp/api/auth/client/signup",
       {
         headers: { "Content-Type": "application/json" },
         method: "POST",
