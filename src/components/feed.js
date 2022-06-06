@@ -6,7 +6,7 @@ function Feed() {
   const token = localStorage.getItem('token')
   const [clients, setClients] = useState([]);
   async function getCLients (){
-    const api = await fetch("http://196.223.240.154:8099/supapp/api/users", {
+    const api = await fetch("https://196.223.240.154:8099/supapp/api/users", {
       method: 'GET', 
       headers:{
         Authorization: 'Bearer ' + token

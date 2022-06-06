@@ -79,8 +79,6 @@ function Order(props) {
                         </div>))}
 
                       </div>
-
-                   
                    <div className='block ml-24 overflow-y-scroll  h-96 scroll-m-2 scrollbar-thin scrollbar-thumb-custom scrollbar-track-custom-light'>
                    {orders.map(order => (
                 <div className='h-12 w-60 border-b border-gray-200 '>

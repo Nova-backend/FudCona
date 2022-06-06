@@ -11,7 +11,7 @@ function Menu() {
   
     let [menuItems, setMenuItems] = useState([])
     async function getMenuItems (){
-        const api = await fetch('http://196.223.240.154:8099/supapp/api/menu-items', {
+        const api = await fetch('https://196.223.240.154:8099/supapp/api/menu-items', {
             method: 'GET',
         })
         const data = await api.json()
